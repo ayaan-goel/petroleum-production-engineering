@@ -1,29 +1,38 @@
-# Petroleum Production Engineering Portfolio
+# Petroleum Production Engineering - Exam Synthesis Portfolio 🛢️
 
-This repository contains a digital portfolio of theory notes, numericals, assignments, and detailed graphical analysis for Petroleum Production Engineering.
+This repository is a comprehensive, exam-ready digital portfolio for **Petroleum Production Engineering**. It synthesizes complex theory notes, detailed numerical solutions, and graphical analysis into a structured, highly accessible web platform.
 
-## 🚀 Website Dashboard
-The interactive application is hosted on GitHub Pages.
-**[View the Dashboard Here](https://ayaan-goel.github.io/petroleum-production-engineering/)**
+## 🚀 Live Website
+The interactive dashboard is hosted on GitHub Pages:
+**[👉 View the Exam Portfolio Here](https://ayaan-goel.github.io/petroleum-production-engineering/)**
+
+## ✨ Key Features
+
+- **Exam-Oriented Theory:** Units are structured around "Test Your Understanding" (TYU) questions requested by the professor, complete with detailed diagrams and derivations.
+- **Strategic "Bluff" Tips:** Each theory section includes quick, smart tips for exam padding and intelligently answering open-ended questions.
+- **Integrated Numericals:** Detailed step-wise solutions for both PPT and Self-practice problems, including graphical analysis using Gilbert Curves.
+- **Premium UI/UX:**
+  - **Dual Theme Support:** Smooth Light/Dark mode toggle with persistence.
+  - **Glassmorphism Design:** Modern, sleek interface with vibrant color coding for different course units.
+  - **Mobile Optimized:** Fully responsive layout designed for quick reading on the go.
+  - **Smooth Animations:** Staggered fade-in effects for a premium app-like feel.
+- **MathJax Integration:** High-quality rendering of complex reservoir and production equations.
 
 ## 📂 Repository Structure
 
-- `css/` - Global styling (dark mode, glassmorphism, responsive grids).
-- `js/` - Interactive frontend scripts (theme toggling, scroll animations).
-- `theory/` - Contains conceptual notes and materials for Units 1, 2, 3, and 4.
-- `numericals/` - Contains the solved numericals and methodologies.
-  - `pre_midsem_ppt/` - Solutions to official Pre Midsem PPT problems (including error corrections).
-  - `pre_midsem_self/` - Solutions and derivations for self-practice Pre Midsem problems.
-  - `post_midsem_ppt/` - Solutions to official Post Midsem PPT problems.
-  - `post_midsem_self/` - Graphical analysis and solutions for Post Midsem self-practice problems.
-- `index.html` - The main entry point (dashboard portal) for the web application.
+- `theory/` - The core conceptual library.
+  - `unit1/` to `unit4/` - Unit-wise organized notes, images, and original PDFs.
+  - Each unit contains a dedicated `pdfs/` folder with the source study material.
+- `numericals/` - Comprehensive problem-solving bank.
+  - `pre_midsem_ppt/` & `pre_midsem_self/` - Solutions for inflow performance, IPR, and PI.
+  - `post_midsem_ppt/` & `post_midsem_self/` - Solutions for tubing performance (Gilbert Curves) and outflow analysis.
+- `css/` & `js/` - Frontend engine powering the design and interactivity.
+- `index.html` - The central navigation portal.
 
-## ✨ Features
-- **MathJax Integration:** Beautiful and clear mathematical formulas.
-- **Graphical Analysis:** Side-by-side comparison of problem statements and marked-up graphical solutions (e.g., using Gilbert Curves).
-- **Light/Dark Mode:** Seamless theme toggling with LocalStorage persistence.
-- **Responsive Design:** Fully optimized for mobile screens with stacking grids and adaptive layouts.
-- **Smooth Animations:** Staggered JavaScript fade-in animations for a premium user experience.
+## 🛠️ Technology Stack
+- **Frontend:** HTML5, CSS3 (Vanilla), JavaScript (ES6+).
+- **Math:** MathJax 3.0.
+- **Fonts:** Outfit (Google Fonts).
 
 ---
-*Maintained by Ayaan Goel*
+*Created and maintained by Ayaan Goel for Petroleum Production Engineering Finals.*
