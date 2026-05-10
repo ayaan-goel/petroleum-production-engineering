@@ -283,8 +283,58 @@ ol li::marker {
     border-left: 4px solid var(--danger-border);
 }
 
+/* Light Mode Overrides */
+body.light-mode {
+    --bg-color: #f8fafc;
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(0, 0, 0, 0.15);
+    color: #0f172a;
+}
+body.light-mode h1 {
+    background: linear-gradient(to right, #4f46e5, #db2777);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body.light-mode .card-header h2 { color: #0f172a; }
+body.light-mode p.subtitle, body.light-mode .image-box h3, body.light-mode ol { color: #475569; }
+body.light-mode .detailed-answer { background: rgba(0, 0, 0, 0.02); }
+body.light-mode .math-block, body.light-mode .equation-box { background: rgba(0, 0, 0, 0.05); }
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: inherit;
+    padding: 10px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    font-family: inherit;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: var(--card-shadow);
+}
+.theme-toggle:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    h1 { font-size: 2.25rem; }
-    .images-container { grid-template-columns: 1fr; }
+    body { padding: 1rem 0.5rem; }
+    header { padding: 2rem 1rem; margin-bottom: 2rem; }
+    h1 { font-size: 2.2rem !important; }
+    .images-container { grid-template-columns: 1fr; gap: 1rem; }
     .question-card { padding: 1.5rem; }
+    .theme-toggle { top: 10px; right: 10px; padding: 8px 12px; font-size: 0.9rem; }
+    .dashboard-grid { grid-template-columns: 1fr !important; }
 }
