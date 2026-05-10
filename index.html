@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petroleum Engineering Numericals</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Petroleum Production Engineering</h1>
+            <p class="subtitle">Detailed solutions and graphical analysis for tubing performance numericals</p>
+        </header>
+
+        <!-- Question 1 -->
+        <article class="question-card">
+            <div class="card-header">
+                <h2>Question 1: Finding Flowing Bottomhole Pressure</h2>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <h3>Problem Statement</h3>
+                    <img src="images/Question_1.png" alt="Question 1 Statement">
+                </div>
+                <div class="image-box">
+                    <h3>Graphical Solution</h3>
+                    <img src="images/Solution_1.png" alt="Solution 1 Graph">
+                </div>
+            </div>
+            <div class="detailed-answer">
+                <h3>Detailed Answer & Analysis</h3>
+                <p><strong>Objective:</strong> Find the flowing pressure at the foot (Bottomhole Pressure, BHP) of 13,000 ft of 2 3/8 in. tubing. The well is flowing 100 bbl/day at a Gas-Liquid Ratio (GLR) of 1 mcf/bbl, with a given Tubing Head Pressure (THP) of 200 psi.</p>
+                <br>
+                <p><strong>Step-by-Step Procedure using the Gilbert Gradient Curve:</strong></p>
+                <ol>
+                    <li><strong>Locate THP:</strong> Start at the top pressure axis and locate the Tubing Head Pressure of <strong>200 psi</strong> (marked as ①).</li>
+                    <li><strong>Find Equivalent Depth:</strong> Drop vertically down from 200 psi to intersect the gradient curve corresponding to the given GLR of <strong>1.0 mcf/bbl</strong> (marked as ②).</li>
+                    <li>Read the equivalent depth horizontally on the left axis. The equivalent depth for the wellhead is approximately <strong>3,300 ft</strong> (marked as ③).</li>
+                    <li><strong>Add Tubing Length:</strong> Add the actual length of the tubing to this equivalent depth to find the equivalent depth of the bottom of the well. <br> <em>New Equivalent Depth = 3,300 ft + 13,000 ft = 16,300 ft</em> (marked as ④).</li>
+                    <li><strong>Locate New Point:</strong> Move horizontally to the right from the new depth of 16,300 ft to intersect the same GLR curve (1.0 mcf/bbl) (marked as ⑤).</li>
+                    <li><strong>Read BHP:</strong> Move vertically upward from this intersection point to read the corresponding pressure on the top axis.</li>
+                </ol>
+                <div class="conclusion">
+                    Final Answer: The flowing bottomhole pressure is approximately 1850 psi (marked as ⑥).
+                </div>
+            </div>
+        </article>
+
+        <!-- Question 2 -->
+        <article class="question-card">
+            <div class="card-header">
+                <h2>Question 2: Finding Tubing Head Pressure (THP)</h2>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <h3>Problem Statement</h3>
+                    <img src="images/Question_2.png" alt="Question 2 Statement">
+                </div>
+                <div class="image-box">
+                    <h3>Graphical Solution</h3>
+                    <img src="images/Solution_2.png" alt="Solution 2 Graph">
+                </div>
+            </div>
+            <div class="detailed-answer">
+                <h3>Detailed Answer & Analysis</h3>
+                <p><strong>Objective:</strong> Determine the Tubing Head Pressure (THP) for a well completed with 8,000 ft of 2 3/8 in. tubing. The well is flowing at 600 bbl/day, with a GLR of 0.4 mcf/bbl, and the bottomhole flowing pressure is 2200 psi.</p>
+                <br>
+                <p><strong>Step-by-Step Procedure:</strong></p>
+                <ol>
+                    <li><strong>Locate BHP:</strong> Start at the top pressure axis and locate the given Bottomhole Pressure of <strong>2200 psi</strong> (marked as ①).</li>
+                    <li><strong>Find Equivalent Depth:</strong> Drop vertically down to intersect the gradient curve corresponding to the GLR of <strong>0.4 mcf/bbl</strong> (marked as ②).</li>
+                    <li>Move horizontally to the left axis to read the equivalent depth. The equivalent depth at the bottom of the well is approximately <strong>12,500 ft</strong> (marked as ③).</li>
+                    <li><strong>Subtract Tubing Length:</strong> Subtract the actual tubing length from the bottom equivalent depth to find the equivalent depth of the wellhead. <br> <em>Wellhead Equivalent Depth = 12,500 ft - 8,000 ft = 4,500 ft</em> (marked as ④).</li>
+                    <li><strong>Locate Wellhead Point:</strong> Move horizontally to the right from the new depth of 4,500 ft to intersect the same GLR curve (0.4 mcf/bbl) (marked as ⑤).</li>
+                    <li><strong>Read THP:</strong> Move vertically upward from this intersection point to read the pressure on the top axis.</li>
+                </ol>
+                <div class="conclusion">
+                    Final Answer: The Tubing Head Pressure (THP) is approximately 600 psi (marked as ⑥).
+                </div>
+            </div>
+        </article>
+
+        <!-- Question 3 -->
+        <article class="question-card">
+            <div class="card-header">
+                <h2>Question 3: Will the Well Flow?</h2>
+            </div>
+            <div class="images-container">
+                <div class="image-box">
+                    <h3>Problem Statement</h3>
+                    <img src="images/Question_3.png" alt="Question 3 Statement">
+                </div>
+                <div class="image-box">
+                    <h3>Graphical Solution</h3>
+                    <img src="images/Solution_3.png" alt="Solution 3 Graph">
+                </div>
+            </div>
+            <div class="detailed-answer negative-answer">
+                <h3>Detailed Answer & Analysis</h3>
+                <p><strong>Objective:</strong> Determine if a well will flow at a desired rate of 400 bbl/day given a PI of 0.4 bbl/day/psi, a static reservoir pressure of 1500 psi, tubing length of 4000 ft, and a GLR of 0.2 mcf/bbl.</p>
+                <br>
+                <p><strong>Step 1: Calculate the Available Bottomhole Pressure (from Inflow Performance)</strong></p>
+                <p>Using the Productivity Index (PI) equation: <em>q = PI × (Pr - Pwf)</em></p>
+                <p>Rearranging for Pwf (flowing bottomhole pressure): <em>Pwf = Pr - (q / PI)</em></p>
+                <p>Available Pwf = 1500 - (400 / 0.4) = 1500 - 1000 = <strong>500 psi</strong></p>
+                <br>
+                <p><strong>Step 2: Determine the Required Bottomhole Pressure (from Outflow/Tubing Performance)</strong></p>
+                <p>Assuming a standard Tubing Head Pressure (THP) of 200 psi (as indicated by the solution markings):</p>
+                <ol>
+                    <li>Start at THP = <strong>200 psi</strong> on the top axis (marked as ①).</li>
+                    <li>Drop vertically to the GLR = <strong>0.2 mcf/bbl</strong> curve (marked as ②).</li>
+                    <li>Read the equivalent wellhead depth on the left axis: <strong>7,500 ft</strong> (marked as ③).</li>
+                    <li>Add the tubing length (4,000 ft) to find the bottom equivalent depth: <em>7,500 ft + 4,000 ft = <strong>11,500 ft</strong></em> (marked as ④).</li>
+                    <li>Move right from 11,500 ft to intersect the 0.2 GLR curve (marked as ⑤) and read the pressure vertically on the top axis.</li>
+                    <li>The Required Pwf to lift the fluid to surface against a 200 psi THP is approximately <strong>800 psi</strong>.</li>
+                </ol>
+                <br>
+                <p><strong>Step 3: Compare Available vs. Required Pressure</strong></p>
+                <p>The reservoir can only supply 500 psi at the wellbore to flow 400 bbl/day, but the tubing requires 800 psi to lift that fluid to the surface against a 200 psi THP.</p>
+                <div class="negative-conclusion">
+                    Final Answer: Since Available Pwf (500 psi) < Required Pwf (800 psi), the well will NOT flow at the desired rate of 400 bbl/day.
+                </div>
+            </div>
+        </article>
+
+        <footer style="text-align: center; color: var(--light-text); margin-top: 2rem;">
+            <p>&copy; 2026 Petroleum Engineering Portfolio</p>
+        </footer>
+    </div>
+</body>
+</html>
