@@ -1,0 +1,38 @@
+
+=== Unit 1 TYU (4 items) ===
+  Q1: Discuss about the Petroleum Production System from the wells to the Surface Processing Facility/Group Gathering Station (GGS)? 20 Marks
+  Q2: Discuss with diagram the different types of gathering used in the Upstream Oil and Gas Industry? 10 Marks
+  Q3: Discuss the roles and activities performed by a Petroleum Production Engineer. Analyze and discuss any 5 production activities where the role of a (Chemical/Mechanical/Civil/Computer/Electrical Engineer) plays an integral part in production of Oil and gas. 10+5 Marks
+  Q4: Draw and demarcate the well head equipment used in the Upstream Oil and Gas Industry? Also discuss which valves are operated so that the oil flow is directed towards the surface facility. 10 Marks
+
+=== Unit 2 TYU (15 items) ===
+  Q1: Discuss about the role of tubulars and packers in petroleum production from subsurface formations. 15 Marks
+  Q2: Discuss about the various types of completion along with their schematic diagrams and their purpose for the oil and gas production. 15 Marks
+  Q3: Discuss the advantages and disadvantages of the various types of completions used in oil and gas industry. 15 Marks
+  Q4: Discuss about the indicator diagrams and state the importance of the individual indicator curves. 15 Marks
+  Q5: Discuss about wellbore damage, skin zone (with diagram) and illustrate 5 activities which can lead to wellbore damage. 15 Marks
+  Q6: Illustrate all the Wax Removal Methods available for paraffin and asphaltene removal oil and gas industry. 15 Marks
+  Q7: Discuss the operational steps for mechanical scrapping through a case study of Cambay Basin. 15 Marks
+  Q8: Discuss with diagram the operational steps for thermal treatment (with packer) for paraffin and asphaltene removal. 15 Marks
+  Q9: Discuss with diagram the operational steps for thermal treatment (without packer) for paraffin and asphaltene removal. 15 Marks
+  Q10: Discuss with diagram the operational steps for dispersant treatment for lowering pour point while transporting crude oil from Well to GGS. 15 Marks
+  Numerical 1: [PI/AOF] A productivity test was conducted on a well... 15 Marks (Values will change)
+  Numerical 2: [IPR] A well is produced from a saturated oil reservoir... 15 Marks (Values will change)
+  Numerical 3: [Gilbert] Find the flowing pressure at the foot of 13000 ft of 2-3/8 in. tubing... 15 Marks (Values will change)
+  Numerical 4: [Gilbert] What is the tubing pressure (THP) of well completed with 8000 ft of 2-3/8 in. tubing... 15 Marks (Values will change)
+  Numerical 5: [Gilbert] It is hoped to flow a well having a PI of 0.4 bbl/day/psi... will the well flow at the desired rate? 15 Marks (Values will change)
+
+=== Unit 3 TYK (9 items) ===
+  Q1: Illustrate any five (5) components of the surface unit of a Sucker Rod Pump. 10 marks
+  Q2: Appraise on the pumping cycle of a sub-surface pump of a sucker rod pump. 10 marks
+  Q3: Illustrate on the Gas Lift System and the types of Gas Lift with a neat diagram. 15 marks
+  Q4: Derive the equation for Gas Lift injection pressure with a neat diagram labelling the components. 15 marks
+  Q5: Discuss the operating principles of a progressive cavity pump with a diagram labelling its parts. 15 Marks
+  Q6: Illustrate on the Progressive Cavity Pump (PCP) with a diagram labelling its parts and discuss the advantages and limitations of PCP. 15 marks
+  Q7: Appraise on the Electrical Submersible Pump (ESP) used in the oil and gas industry with a labelled diagram. 15 marks
+  Q8: Discuss the advantages and disadvantages of an Electrical Submersible Pump (ESP). 10 marks
+  Q9: Illustrate on the working of Jet Pump with a diagram labelling its parts and discuss the advantages and limitations of Jet Pump. 15 marks
+
+=== Unit 4 (2 items) ===
+  No TYU questions in PDF - Topic-wise coverage required
+  Topics: Introduction, Fixed (Jacket, Gravity, Jackup, Compliant), Floating (TLP, Semi-sub, FPSO/FSO, SPAR, Tanker FPS)
