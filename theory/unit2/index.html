@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2 - Reservoir Considerations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        .hero{background:linear-gradient(135deg,rgba(59,130,246,.2),rgba(99,102,241,.1));border-radius:24px;padding:3rem 2rem;text-align:center;margin-bottom:3rem;border:1px solid rgba(255,255,255,.1)}
+        .flow{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin:1.5rem 0}
+        .fnode{background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.4);border-radius:10px;padding:.5rem 1rem;font-size:.85rem;color:#93c5fd}
+        .farrow{color:#3b82f6;display:flex;align-items:center}
+        .qcard{background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:20px;padding:2rem;margin-bottom:2.5rem;backdrop-filter:blur(16px)}
+        .qhead{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,.08);flex-wrap:wrap}
+        .qbadge{background:linear-gradient(135deg,#3b82f6,#6366f1);color:#fff;padding:.3rem .8rem;border-radius:20px;font-size:.8rem;font-weight:600;white-space:nowrap}
+        .mbadge{background:rgba(245,158,11,.2);color:#fbbf24;border:1px solid rgba(245,158,11,.3);padding:.3rem .8rem;border-radius:20px;font-size:.8rem;font-weight:600;margin-left:auto}
+        .qtitle{font-size:1.2rem;font-weight:600;color:#f8fafc}
+        .qquote{background:rgba(59,130,246,.08);border-left:3px solid #3b82f6;padding:1rem 1.2rem;border-radius:0 10px 10px 0;margin-bottom:1.5rem;color:#cbd5e1;font-style:italic}
+        h4{color:#93c5fd;margin:1.2rem 0 .6rem;font-size:1rem}
+        p,li{color:#cbd5e1;line-height:1.8}
+        ul,ol{margin-left:1.5rem}
+        li{margin-bottom:.3rem}
+        .imgbox{border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.1);margin:1rem 0}
+        .imgbox img{width:100%;display:block}
+        .imgcap{text-align:center;color:#64748b;font-size:.82rem;padding:.4rem;background:rgba(0,0,0,.2)}
+        .bluff{background:linear-gradient(135deg,rgba(16,185,129,.1),rgba(16,185,129,.05));border:1px solid rgba(16,185,129,.3);border-radius:14px;padding:1.2rem 1.5rem;margin-top:1.5rem}
+        .bluff h5{color:#34d399;margin-bottom:.5rem;font-size:.92rem}
+        .bluff p,.bluff li{color:#86efac;font-size:.88rem}
+        .kp{background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.2);border-radius:10px;padding:.7rem 1rem;margin:.5rem 0;color:#bfdbfe;font-size:.9rem}
+        .twocol{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+        .back-btn{color:#818cf8;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;margin-bottom:1.5rem;font-weight:500}
+        .answer-section{margin-top:0}
+        @media(max-width:768px){.twocol{grid-template-columns:1fr}}
+        body.light-mode p,body.light-mode li{color:#374151}
+        body.light-mode .bluff p,body.light-mode .bluff li{color:#065f46}
+    </style>
+</head>
+<body>
+<div class="background-elements"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+<div class="container">
+<a href="../index.html" class="back-btn">← Back to Theory Dashboard</a>
+
+<div class="hero">
+    <div style="font-size:3.5rem;margin-bottom:.8rem">⚙️</div>
+    <h1 style="font-size:2.5rem;margin-bottom:.6rem">Unit 2</h1>
+    <p class="subtitle">Reservoir Considerations – Completions, PI/IPR, TPR & Formation Damage</p>
+    <div style="margin-top:1.5rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <span style="background:rgba(59,130,246,.2);border:1px solid rgba(59,130,246,.4);padding:.4rem 1rem;border-radius:20px;font-size:.85rem;color:#93c5fd">📋 10 Exam Questions + Numericals</span>
+        <span style="background:rgba(245,158,11,.2);border:1px solid rgba(245,158,11,.4);padding:.4rem 1rem;border-radius:20px;font-size:.85rem;color:#fbbf24">⏱️ 9 Hours</span>
+    </div>
+</div>
+
+<div class="qcard">
+    <h2 style="color:#93c5fd;margin-bottom:1rem">📌 Topic Flow</h2>
+    <div class="flow">
+        <div class="fnode">Tubulars & Packers</div><div class="farrow">→</div>
+        <div class="fnode">Well Completions</div><div class="farrow">→</div>
+        <div class="fnode">PI & Indicator Diagrams</div><div class="farrow">→</div>
+        <div class="fnode">IPR Numericals</div><div class="farrow">→</div>
+        <div class="fnode">Gilbert Curves (TPR)</div><div class="farrow">→</div>
+        <div class="fnode">Wellbore Damage & Skin</div><div class="farrow">→</div>
+        <div class="fnode">Scale Removal</div><div class="farrow">→</div>
+        <div class="fnode">Wax Removal Methods</div>
+    </div>
+</div>
+<!-- Q1: Tubulars and Packers -->
+<div class="qcard">
+    <div class="qhead"><span class="qbadge">Q1</span><span class="qtitle">Role of Tubulars & Packers in Petroleum Production</span><span class="mbadge">15 Marks</span></div>
+    <div class="qquote">"Discuss about the role of tubulars and packers in petroleum production from subsurface formations."</div>
+    <div class="answer-section">
+        <h4>ðŸ”© Tubulars</h4>
+        <p>Production tubing is a wellbore tubular that forms the <strong>conduit for reservoir fluids to flow from wellbore to surface</strong>. Typically run inside casing/liner.</p>
+        <p><strong>Functions of Tubing:</strong></p>
+        <ul>
+            <li>Provides optimized flow channel for maximum efficient production rate</li>
+            <li>Isolates casing from high pressure, high temperature, and corrosive fluids</li>
+            <li>Essential for well killing, circulation, and workover operations</li>
+            <li>Facilitates multiple/commingled completions</li>
+            <li>Essential for most artificial lift operations</li>
+            <li>Facilitates installation of wireline-operated downhole tools</li>
+        </ul>
+        <p><strong>Design Considerations:</strong> Tubing strings are designed considering <em>tension, collapse, and burst loads</em> to prevent mechanical failure and deformation.</p>
+        <h4>ðŸ”’ Packers</h4>
+        <p>Production packers provide a means of <strong>sealing the tubing string from the casing</strong>, preventing communication of fluids between the annulus and tubing.</p>
+        <p><strong>Uses of Packer (Routine situations):</strong></p>
+        <ol>
+            <li>Protection of casing from pressure (well and stimulation pressures) and corrosive fluids</li>
+            <li>Isolation of casing leaks, squeezed perforations, or multiple producing intervals</li>
+            <li>Elimination of inefficient "heading" or "surging"</li>
+            <li>Some artificial lift installations</li>
+            <li>In conjunction with subsurface safety valves</li>
+            <li>To hold kill fluids or treating fluids in casing annulus</li>
+        </ol>
+        <h4>Types of Packers</h4>
+        <ul>
+            <li><strong>Retrievable</strong> â€“ Run as integral part of tubing string; set mechanically or hydraulically; can be released by pulling/rotating tubing</li>
+            <li><strong>Permanent</strong> â€“ Once set, can only be removed destructively by milling; set mechanically, hydraulically, or electrically</li>
+            <li><strong>Permanent-Retrievable</strong> â€“ Combination type</li>
+        </ul>
+        <div class="imgbox"><img src="images/packer_types.png" alt="Packer Types"><div class="imgcap">Fig 1: Types of Packers</div></div>
+        <div class="bluff"><h5>âœ¨ Bluff Tip</h5><p>Add: <em>"Packers are sometimes run unnecessarily, resulting in wasted initial investment and high future removal costs â€” hence their use should be limited to situations where they serve a definite purpose."</em></p></div>
+    </div>
+</div>
+
+<!-- Q2 & Q3: Completion Types -->
+<div class="qcard">
+    <div class="qhead"><span class="qbadge">Q2 & Q3</span><span class="qtitle">Well Completion Types â€“ Diagrams, Purpose, Advantages & Disadvantages</span><span class="mbadge">15 Marks each</span></div>
+    <div class="qquote">"Discuss the various types of completion along with schematic diagrams and their purpose. / Discuss advantages and disadvantages of various completions."</div>
+    <div class="answer-section">
+        <p>There are three basic ways to complete a well:</p>
+        <div class="imgbox"><img src="images/completion_methods.png" alt="Completion Methods"><div class="imgcap">Fig 2: Well Completion Methods Overview</div></div>
+
+        <h4>ðŸŸ¢ 1. Open-Hole Completion</h4>
+        <p>Casing is set only to the top of (or slightly into) the pay zone and cemented. The pay zone is left <strong>open and uncemented</strong>.</p>
+        <div class="twocol">
+            <div>
+                <p><strong>âœ… Advantages:</strong></p>
+                <ul>
+                    <li>Full-hole diameter available to flow</li>
+                    <li>No perforation required or cost</li>
+                    <li>Hole easily deepened or converted to liner completion</li>
+                    <li>High productivity maintained when gravel packed for sand control</li>
+                    <li>Casing set using special techniques to minimize formation damage</li>
+                    <li>Facilitates ultra-short radius multiple radial completion</li>
+                </ul>
+            </div>
+            <div>
+                <p><strong>âŒ Disadvantages:</strong></p>
+                <ul>
+                    <li>No way to regulate fluid flow from/into wellbore</li>
+                    <li>Cannot effectively control gas or water production</li>
+                    <li>Casing is set "in the dark" â€” formation top picked from cuttings only</li>
+                    <li>Difficult to selectively stimulate producing intervals</li>
+                    <li>Periodic cleanout required; formation collapse more common</li>
+                    <li>Requires more rig time when completed</li>
+                </ul>
+            </div>
+        </div>
+
+        <h4>ðŸ”µ 2. Cased Hole (Cased & Perforated) Completion</h4>
+        <p>Casing is set through the producing formation and cemented. Then <strong>perforated</strong> to provide communication between wellbore and formation.</p>
+        <div class="imgbox"><img src="images/cased_hole_completion.png" alt="Cased Hole"><div class="imgcap">Fig 3: Cased & Perforated Completion</div></div>
+        <div class="twocol">
+            <div>
+                <p><strong>âœ… Advantages:</strong></p>
+                <ul>
+                    <li>Easy selective completion and workover</li>
+                    <li>Can effectively control gas and water by selective perforation/isolation</li>
+                    <li>Permits multiple completions</li>
+                    <li>Can selectively stimulate; DST logs provide casing depth info</li>
+                    <li>Adaptable to sand control (gravel packing)</li>
+                </ul>
+            </div>
+            <div>
+                <p><strong>âŒ Disadvantages:</strong></p>
+                <ul>
+                    <li>Long interval perforation can be expensive</li>
+                    <li>Effective wellbore diameter may be reduced</li>
+                    <li>Good cement job required through production intervals</li>
+                    <li>More expensive than open-hole</li>
+                </ul>
+            </div>
+        </div>
+
+        <h4>ðŸŸ£ 3. Liner Completion</h4>
+        <p>Casing run to top of pay; a <strong>liner is set across the producing formation</strong>. Liner may be cemented (perforated) or un-cemented (slotted). Primarily used for sand control.</p>
+        <div class="imgbox"><img src="images/liner_completion.png" alt="Liner Completion"><div class="imgcap">Fig 4: Liner Completion</div></div>
+        <div class="twocol">
+            <div>
+                <p><strong>Un-cemented Liner âœ…:</strong></p>
+                <ul>
+                    <li>Entire pay zone open to wellbore</li>
+                    <li>No perforation cost</li>
+                    <li>Adaptable to special sand control methods</li>
+                </ul>
+                <p><strong>Un-cemented Liner âŒ:</strong></p>
+                <ul>
+                    <li>Excessive water/gas difficult to control</li>
+                    <li>Selective stimulation not possible</li>
+                </ul>
+            </div>
+            <div>
+                <p><strong>Cemented Liner âœ…:</strong></p>
+                <ul>
+                    <li>Formation damage minimized</li>
+                    <li>Selective stimulation possible</li>
+                    <li>Cleanout avoided in screen liner</li>
+                </ul>
+                <p><strong>Cemented Liner âŒ:</strong></p>
+                <ul>
+                    <li>Diameter across pay minimized</li>
+                    <li>Good cementation difficult</li>
+                    <li>Log interpretation critical</li>
+                    <li>Additional costs (perforating, cementing, rig time)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bluff"><h5>âœ¨ Bluff Tip</h5><p>Summarize in one line: <em>"The choice of completion depends on reservoir characteristics, fluid type, formation stability, and economic considerations. Cased & perforated is most versatile; open-hole gives highest productivity; liner is best for sand control."</em></p></div>
+    </div>
+</div>
+
+<!-- Q4: Indicator Diagrams -->
+<div class="qcard">
+    <div class="qhead"><span class="qbadge">Q4</span><span class="qtitle">Indicator Diagrams & Productivity Index</span><span class="mbadge">15 Marks</span></div>
+    <div class="qquote">"Discuss about the indicator diagrams and state the importance of the individual indicator curves."</div>
+    <div class="answer-section">
+        <h4>ðŸ”‘ Productivity / Deliverability Test</h4>
+        <p>Tests that physically measure oil, gas, and water produced at a fixed bean/choke size. Provides evidence of well conditions. Two main types: <strong>Productivity Index (PI)</strong> and <strong>Inflow Performance (IPR)</strong>.</p>
+        <h4>ðŸ“ Productivity Index Formula</h4>
+        <p style="font-family:monospace;background:rgba(0,0,0,0.3);padding:0.8rem;border-radius:8px">PI = J = Q<sub>o</sub> / (P<sub>s</sub> âˆ’ P<sub>wf</sub>) = Q<sub>o</sub> / Î”P</p>
+        <p>Where: Q<sub>o</sub> = flow rate (STB/day), P<sub>s</sub> = shut-in pressure (psi), P<sub>wf</sub> = flowing BHP (psi)</p>
+        <div class="imgbox"><img src="images/indicator_diagram.png" alt="Indicator Diagram"><div class="imgcap">Fig 5: Indicator Diagram â€“ Types of Indicator Lines</div></div>
+        <h4>ðŸ“Š The Indicator Diagram Equation</h4>
+        <p style="font-family:monospace;background:rgba(0,0,0,0.3);padding:0.8rem;border-radius:8px">Q<sub>o</sub> = J(P<sub>s</sub> âˆ’ P<sub>wf</sub>)<sup>n</sup> = J Ã— Î”P<sup>n</sup></p>
+        <p>Where 'n' is NOT less than 1.</p>
+        <h4>ðŸ“ˆ 4 Types of Indicator Curves</h4>
+        <ol>
+            <li><strong>Type 1 (n = 1) â€“ Straight Line:</strong> Curve is a straight line through origin. Represents steady-state single-phase flow following Darcy's Law. Most ideal case.</li>
+            <li><strong>Type 2 (n &lt; 1) â€“ Convex, then curves:</strong> Initially straight, then curves when reservoir pressure drops below bubble point (P<sub>b</sub>). Indicates two-phase flow below bubble point. The divergence point â‰ˆ saturation pressure.</li>
+            <li><strong>Type 3 (n &lt; 1) â€“ Convex from start:</strong> Convex to q-axis from the beginning due to <strong>turbulent flow</strong>. Occurs when recovery mechanism is solution gas drive or gravity drive (not water drive).</li>
+            <li><strong>Type 4 (n &gt; 1) â€“ Concave:</strong> Concave to q-axis. Occurs due to errors in measuring BHP and oil rates, or when flow is unsteady. Results from unstabilized flowing conditions.</li>
+        </ol>
+        <div class="kp">ðŸ”‘ n â‰  1 indicates deviation from Darcy's Law. Type 2 deviation reveals bubble point pressure; Type 3 indicates turbulence; Type 4 indicates measurement errors or unsteady flow.</div>
+        <div class="bluff"><h5>âœ¨ Bluff Tip</h5><p>Mention: <em>"The indicator diagram is also called the 'Well Performance Plot' or 'Bean Study'. The Deliverability Test represents stabilized producing conditions and measures both BHP and surface flow rates simultaneously."</em></p></div>
+    </div>
+</div>
+
+<!-- Q5 & Numericals: PI/IPR + Gilbert Curves -->
+<div class="qcard">
+    <div class="qhead"><span class="qbadge">Numericals</span><span class="qtitle">PI / IPR Numericals â€“ See Numericals Section</span><span class="mbadge">15 Marks each</span></div>
+    <div class="qquote">"A productivity test was conducted... Calculate PI, AOF, flow rate at Pwf = 600 psi, Pwf to produce 250 STB/day." &nbsp;|&nbsp; "A well is produced from saturated reservoir... find flow rate at Pwf = 1950, PI, AOF, Plot IPR."</div>
+    <div class="answer-section">
+        <div class="kp">ðŸ“‚ These numericals are already solved in detail in the Numericals section. Refer to:
+            <br>â†’ <a href="../../numericals/pre_midsem_ppt/index.html" style="color:#818cf8">Pre Midsem PPT Numericals</a> (Problem 1 & 2)
+            <br>â†’ <a href="../../numericals/pre_midsem_self/index.html" style="color:#818cf8">Pre Midsem Self Numericals</a> (Problem 1 & 2)
+        </div>
+        <h4>ðŸ”‘ Key Formulas to Remember</h4>
+        <p style="font-family:monospace;background:rgba(0,0,0,0.3);padding:0.8rem;border-radius:8px;line-height:2">
+            J = Q<sub>o</sub> / (PÌ„<sub>R</sub> âˆ’ P<sub>wf</sub>)<br>
+            AOF = J Ã— PÌ„<sub>R</sub><br>
+            q at given P<sub>wf</sub> = J Ã— (PÌ„<sub>R</sub> âˆ’ P<sub>wf</sub>)<br>
+            P<sub>wf</sub> for given q = PÌ„<sub>R</sub> âˆ’ (q / J)
+        </p>
+        <div class="bluff"><h5>âœ¨ Exam Note</h5><p>Sir has explicitly stated: <em>"Note: Values will be changed for exam"</em> â€” so practice the methodology, not just the numbers!</p></div>
+    </div>
+</div>
+
+<!-- Q5b & Tubing Performance / Gilbert -->
+<div class="qcard">
+    <div class="qhead"><span class="qbadge">Numericals</span><span class="qtitle">Tubing Performance (Gilbert Curves) Numericals â€“ See Numericals Section</span><span class="mbadge">15 Marks each</span></div>
+    <div class="qquote">"Find flowing pressure at foot of 13000 ft of tubing..." &nbsp;|&nbsp; "Find THP of well with 8000 ft tubing..." &nbsp;|&nbsp; "Will well flow at desired rate?"</div>
+    <div class="answer-section">
+        <div class="kp">ðŸ“‚ These numericals are solved in the Numericals section. Refer to:
+            <br>â†’ <a href="../../numericals/post_midsem_ppt/index.html" style="color:#818cf8">Post Midsem PPT Numericals</a> (Problems 1, 2 & 3)
+            <br>â†’ <a href="../../numericals/post_midsem_self/index.html" style="color:#818cf8">Post Midsem Self Numericals</a>
+        </div>
+        <h4>âš™ï¸ Gilbert's Curve â€“ Concept</h4>
+        <p>Gilbert's approach to vertical two-phase flow is <strong>empirical</strong>. Based on measured values of tubing-flow pressure losses. The curves are derived from measured values of:</p>
+        <ul>
+            <li>Tubing depth (ft) | Bottom-hole flowing pressure (psi) | Tubing-head pressure (psi)</li>
+            <li>Gross liquid rate (bbl/day) | Gas/liquid ratio (mcf/bbl) | Tubing size</li>
+        </ul>
+        <div class="twocol">
+            <div class="imgbox"><img src="images/gilbert_curves.png" alt="Gilbert Curves"><div class="imgcap">Fig 6: Gilbert's Nomogram/Curves</div></div>
+            <div class="imgbox"><img src="images/gilbert_example.png" alt="Gilbert Example"><div class="imgcap">Fig 7: How to read the Gilbert Curves</div></div>
+        </div>
+        <h4>ðŸ“ Methodology for Gilbert Curve Problems</h4>
+        <ol>
+            <li>Identify: tubing size, production rate, GLR, known pressure (THP or BHP), depth</li>
+            <li>Enter Gilbert nomogram with tubing size, rate, and GLR held constant</li>
+            <li>Find equivalent depth of given pressure on the x-axis (depth = 0 line)</li>
+            <li>Add/subtract actual tubing depth to find equivalent depth at tubing shoe</li>
+            <li>Read off the BHP or THP from the pressure-distribution curve</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Q5: Wellbore Damage & Skin Zone -->
+<div class="qcard">
+    <div class="qhead"><span class="qbadge">Q5</span><span class="qtitle">Wellbore Damage, Skin Zone & Causes</span><span class="mbadge">15 Marks</span></div>
+    <div class="qquote">"Discuss about wellbore damage, skin zone (with diagram) and illustrate 5 activities which can lead to wellbore damage."</div>
+    <div class="answer-section">
+        <h4>ðŸ’§ Wellbore Damage</h4>
+        <p>Invasion of materials such as mud filtrate, cement slurry, or clay particles into the formation during drilling, completion, or workover operations reduces the permeability around the wellbore. This is called <strong>Wellbore Damage</strong>.</p>
+        <h4>ðŸŽ¯ Skin Zone</h4>
+        <ul>
+            <li>The region of <strong>altered permeability</strong> around the wellbore</li>
+            <li>Extends from a few inches to several feet from the wellbore</li>
+            <li>Wells are stimulated (acidizing, fracturing) to increase permeability near wellbore</li>
+        </ul>
+        <h4>ðŸ“Š Skin Factor Interpretation</h4>
+        <ul>
+            <li><strong>s &gt; 0 (Positive Skin)</strong> â€“ Permeability reduced; damaged zone; well under-performing</li>
+            <li><strong>s = 0 (Zero Skin)</strong> â€“ No damage; ideal undamaged well condition</li>
+            <li><strong>s &lt; 0 (Negative Skin)</strong> â€“ Permeability enhanced (e.g., after fracturing); well over-performing</li>
+        </ul>
+        <h4>âš ï¸ 4 Types of Formation Damage Mechanisms</h4>
+        <ul>
+            <li><strong>Mechanical</strong> â€“ Physical migration of in-situ fines, solids entrainment</li>
+            <li><strong>Chemical</strong> â€“ Wettability alterations, chemical reactions with formation fluids</li>
+            <li><strong>Biological</strong> â€“ Microbes leading to biofilm/scaling</li>
+            <li><strong>Thermal</strong> â€“ Mineral transformations, dissolution due to temperature changes</li>
+        </ul>
+        <h4>ðŸ”§ 5 Activities Causing Wellbore Damage</h4>
+        <ol>
+            <li><strong>Drilling</strong> â€“ Mud invasion into formation, cement intrusion; reduces permeability near wellbore</li>
+            <li><strong>Perforation</strong> â€“ Layer compaction around perforations, explosive residues blocking flow</li>
+            <li><strong>Production</strong> â€“ Paraffin & asphaltene deposition, scale deposition in formation/tubing</li>
+            <li><strong>Completion/Workover</strong> â€“ Introduction of kill fluids and completion fluids that invade the formation</li>
+            <li><strong>Water Injection (EOR)</strong> â€“ Incompatible injected water causing scale precipitation at formation face</li>
+        </ol>
+        <div class="bluff"><h5>âœ¨ Bluff Tip</h5><p>Draw a simple wellbore cross-section showing: undamaged zone â†’ skin zone (lower k) â†’ wellbore. Label k<sub>d</sub> (damaged permeability) vs k (original permeability) and show skin zone extent (r<sub>s</sub>). This single diagram can secure 5 marks easily.</p></div>
+    </div>
+</div>
+
+<!-- Q6-Q10: Wax Removal Methods -->
+<div class="qcard">
+    <div class="qhead"><span class="qbadge">Q6â€“Q10</span><span class="qtitle">Wax & Scale Removal Methods</span><span class="mbadge">15 Marks each</span></div>
+    <div class="qquote">"Illustrate all Wax Removal Methods / Discuss operational steps for mechanical scrapping / Discuss thermal treatment (with & without packer) / Discuss dispersant treatment for pour point depression."</div>
+    <div class="answer-section">
+        <h4>ðŸ§± Scale Deposition</h4>
+        <p>Scale forms as crystallization/precipitation of minerals from water due to pressure drop, temperature change, mixing of incompatible waters, or exceeding solubility product.</p>
+        <p><strong>Scale Removal Methods:</strong></p>
+        <ul>
+            <li><strong>Mechanical</strong> â€“ String shot, sonic tools, drilling, reaming, reperforating. Used for chemically inert scales (BaSOâ‚„, SrSOâ‚„)</li>
+            <li><strong>Chemical:</strong>
+                <ul>
+                    <li>Water-soluble scale (NaCl) â†’ dissolve with fresh water</li>
+                    <li>Acid-soluble scale (CaCOâ‚ƒ) â†’ dissolve with HCl or Acetic Acid</li>
+                    <li>Acid-insoluble (FeCOâ‚ƒ, gypsum) â†’ degrease â†’ remove iron scales â†’ convert gypsum to CaCOâ‚ƒ â†’ dissolve with HCl</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>ðŸ•¯ï¸ Wax (Paraffin) Removal Methods</h4>
+        <p>Four methods:</p>
+
+        <p><strong>1. Mechanical (Scraping) â€“ Case Study: Cambay Basin</strong></p>
+        <ul>
+            <li>A Butterfly Scraping tool connected above crown valve; lowered to 800m depth via slick line; dummy attached below for auto-pull downward</li>
+            <li>During upward movement, scraping tool removes paraffin from inner walls of tubing</li>
+            <li>Operations usually done in winter (paraffin deposits more in cold)</li>
+            <li><strong>Key Steps:</strong> Fit lubricator on crown valve â†’ lower scraper assembly while crown valve closed â†’ open crown valve â†’ lower slowly â†’ pull out slowly â†’ close crown valve â†’ release pressure â†’ remove scraper</li>
+            <li><em>Safety rules:</em> Well must be in flowing condition; no scraping on non-flowing wells or at night; bean/choke must be checked before and after</li>
+        </ul>
+
+        <p><strong>2. Thermal Method (Hot Oiling/Steaming)</strong></p>
+        <ul>
+            <li>Hot oil or hot water injected to melt/soften paraffin</li>
+            <li>Reverse circulation: steam injected through casing-tubing annulus; production + melted paraffin recovered through tubing</li>
+            <li><strong>Without Packer (Annulus Method):</strong> Steam applied through annulus â†’ heats outer surface of tubing â†’ conducted inward â†’ softens paraffin â†’ removed during circulation and scrapping. Applicable only when annulus is not packed off.</li>
+            <li><strong>With Packer (CTU Method):</strong> Coiled Tubing Unit used with hot oil/water. Hot oil pumped through coil tubing; recovered through annulus between CT and tubing. Oil temp: 60â€“70Â°C. Tubing BOP must be installed and tested.</li>
+        </ul>
+
+        <p><strong>3. Solvent Wax Removal</strong></p>
+        <ul>
+            <li>Solvents like kerosene, xylene, or carbon disulfide (CSâ‚‚) dissolve paraffin</li>
+            <li>CSâ‚‚ = universal paraffin solvent but extremely flammable, toxic, and expensive</li>
+            <li>Chlorinated hydrocarbons (CClâ‚„) effective but not used in USA (adverse effect on refinery catalysts)</li>
+        </ul>
+
+        <p><strong>4. Dispersant Treatment (Pour Point Depressant) â€“ Case Study</strong></p>
+        <ul>
+            <li>Water-soluble dispersants (e.g., Halliburton's Parasperse) disperse paraffin particles; does NOT dissolve paraffin</li>
+            <li>More effective if heated to ~120Â°F; relatively inexpensive and non-flammable (90-98% water)</li>
+            <li><strong>Case Study Steps:</strong> PPD heated in heater â†’ mixed with solvent (diesel) in 1:1 ratio in PPD tank â†’ agitated continuously â†’ compressed â†’ well fluid from heater treater combined with PPD at rate of 7 L/hour via pneumatic pump â†’ PPD depresses pour point of crude â†’ crude stored in 170mÂ³ tank â†’ transported via pipeline 22 km to GGS</li>
+        </ul>
+
+        <div class="bluff"><h5>âœ¨ Bluff Tip</h5><p>Structure your answer in a clear table format:<br>Method | Mechanism | Suitable For | Limitations<br>This structured approach for a 15-mark question can easily earn 12+ marks even with limited detail per row. Also mention: <em>"The choice of paraffin removal method depends on the wax characteristics, well conditions, and economic considerations."</em></p></div>
+    </div>
+</div>
+
+</div>
+<script src="../../js/script.js"></script>
+</body>
+</html>
