@@ -14,7 +14,7 @@ The interactive solutions are hosted on GitHub Pages.
 
 ### Post Midsem
 *Note: All 6 post midsem questions were discussed in class.*
-- **PPT Questions (3)** *(Pending)*
+- **PPT Questions (3)** - Completed! Available in the `post_midsem_ppt/` directory.
 - **Self Questions (3)** - Completed! Available in the `post_midsem_self/` directory.
 
 ## ✨ Features
