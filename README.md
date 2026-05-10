@@ -9,8 +9,8 @@ The interactive solutions are hosted on GitHub Pages.
 ## 📂 Section Structure
 
 ### Pre Midsem
-- **PPT Questions (2)** *(Pending)*
-- **Self-do PPT Questions (2)** *(Pending)*
+- **PPT Questions (2)** - Completed! Available in the `pre_midsem_ppt/` directory. (Includes correction of the PPT's AOF calculation error).
+- **Self-do PPT Questions (2)** - Completed! Available in the `pre_midsem_self/` directory.
 
 ### Post Midsem
 *Note: All 6 post midsem questions were discussed in class.*

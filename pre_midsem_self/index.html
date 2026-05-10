@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Midsem: Self Questions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    
+    <div class="container">
+        <a href="../index.html" style="color: #818cf8; text-decoration: none; display: inline-block; margin-bottom: 1rem; font-weight: 500;">&larr; Back to Dashboard</a>
+        <header class="glass-panel">
+            <h1>Pre Midsem: Self Questions</h1>
+            <p class="subtitle">Test Your Understanding (PI and IPR Analysis)</p>
+        </header>
+
+        <!-- Question 1 -->
+        <article class="question-card glass-panel">
+            <div class="card-header">
+                <span class="badge">Problem 01</span>
+                <h2>Productivity Test & AOF Calculation</h2>
+            </div>
+            <div class="images-container" style="justify-content: center;">
+                <div class="image-box" style="max-width: 800px;">
+                    <h3>Problem Statement</h3>
+                    <div class="img-wrapper">
+                        <img src="images/Question_1.png" alt="Question 1 Statement">
+                    </div>
+                </div>
+            </div>
+            <div class="detailed-answer">
+                <div class="answer-header">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h3>Analysis & Methodology</h3>
+                </div>
+                <div class="math-block">
+                    <p><strong>Given:</strong></p>
+                    <ul>
+                        <li>\( q = 110 \text{ STB/day} \)</li>
+                        <li>\( P_{wf} = 900 \text{ psi} \)</li>
+                        <li>\( \bar{P}_R = 1,300 \text{ psi} \)</li>
+                    </ul>
+                </div>
+                <p><strong>Calculations:</strong></p>
+                <ol>
+                    <li><strong>Productivity Index (PI or J):</strong><br>
+                    <div class="equation-box">\( J = \frac{q}{\bar{P}_R - P_{wf}} = \frac{110}{1300 - 900} = \frac{110}{400} = \mathbf{0.275 \text{ STB/day/psi}} \)</div>
+                    </li>
+                    <li><strong>Absolute Open Flow (AOF):</strong><br>
+                    <div class="equation-box">\( AOF = J \times \bar{P}_R = 0.275 \times 1300 = \mathbf{357.5 \text{ STB/day}} \)</div>
+                    </li>
+                    <li><strong>Oil flow rate at \( P_{wf} = 600 \text{ psi} \):</strong><br>
+                    <div class="equation-box">\( q = J \times (\bar{P}_R - P_{wf}) = 0.275 \times (1300 - 600) = 0.275 \times 700 = \mathbf{192.5 \text{ STB/day}} \)</div>
+                    </li>
+                    <li><strong>Wellbore flowing pressure required to produce 250 STB/day:</strong><br>
+                    <div class="equation-box">\( P_{wf} = \bar{P}_R - \frac{q}{J} = 1300 - \frac{250}{0.275} = 1300 - 909.09 = \mathbf{390.9 \text{ psi}} \)</div>
+                    </li>
+                </ol>
+            </div>
+        </article>
+
+        <!-- Question 2 -->
+        <article class="question-card glass-panel">
+            <div class="card-header">
+                <span class="badge">Problem 02</span>
+                <h2>Saturated Oil Reservoir & IPR Curve</h2>
+            </div>
+            <div class="images-container" style="justify-content: center;">
+                <div class="image-box" style="max-width: 800px;">
+                    <h3>Problem Statement</h3>
+                    <div class="img-wrapper">
+                        <img src="images/Question_2.png" alt="Question 2 Statement">
+                    </div>
+                </div>
+            </div>
+            <div class="detailed-answer">
+                <div class="answer-header">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h3>Analysis & Methodology</h3>
+                </div>
+                <div class="math-block">
+                    <p><strong>Given:</strong></p>
+                    <ul>
+                        <li>\( \bar{P}_R = 3,000 \text{ psig} \)</li>
+                        <li>\( q = 400 \text{ STB/day} \)</li>
+                        <li>\( P_{wf} = 2,580 \text{ psig} \)</li>
+                    </ul>
+                </div>
+                <p><strong>Calculations:</strong></p>
+                <ol>
+                    <li><strong>Productivity Index (J):</strong><br>
+                    <div class="equation-box">\( J = \frac{q}{\bar{P}_R - P_{wf}} = \frac{400}{3000 - 2580} = \frac{400}{420} = \mathbf{0.952 \text{ STB/day/psi}} \)</div>
+                    </li>
+                    <li><strong>Oil flow rate at \( P_{wf} = 1950 \text{ psig} \):</strong><br>
+                    <div class="equation-box">\( q = J \times (\bar{P}_R - P_{wf}) = 0.95238 \times (3000 - 1950) = 0.95238 \times 1050 = \mathbf{1000 \text{ STB/day}} \)</div>
+                    </li>
+                    <li><strong>Absolute Open Flow (AOF):</strong><br>
+                    <div class="equation-box">\( AOF = J \times \bar{P}_R = 0.95238 \times 3000 = \mathbf{2857.1 \text{ STB/day}} \)</div>
+                    </li>
+                </ol>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
