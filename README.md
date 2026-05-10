@@ -1,16 +1,21 @@
-# Petroleum Production Engineering Portfolio
+# Petroleum Production Engineering - Unit 2 Numericals
 
-This repository contains a digital portfolio of numericals, assignments, and detailed graphical analysis for Petroleum Production Engineering.
+This repository contains a digital portfolio of numericals, assignments, and detailed graphical analysis for Unit 2 of Petroleum Production Engineering.
 
 ## 🚀 Website Dashboard
 The interactive solutions are hosted on GitHub Pages.
 **[View the Dashboard Here](https://ayaan-goel.github.io/petroleum-production-engineering/)**
 
-## 📂 Repository Structure
+## 📂 Section Structure
 
-- `css/` - Global styling (dark mode, glassmorphism, responsive grids).
-- `UNIT_2_POST_MIDSEM/` - Post-midsem numericals covering tubing performance, Gilbert gradient curves, and well inflow/outflow analysis.
-- `index.html` - The main entry point (dashboard portal) for the web application.
+### Pre Midsem
+- **PPT Questions (2)** *(Pending)*
+- **Self-do PPT Questions (2)** *(Pending)*
+
+### Post Midsem
+*Note: All 6 post midsem questions were discussed in class.*
+- **PPT Questions (3)** *(Pending)*
+- **Self Questions (3)** - Completed! Available in the `post_midsem_self/` directory.
 
 ## ✨ Features
 - **MathJax Integration:** Beautiful and clear mathematical formulas.

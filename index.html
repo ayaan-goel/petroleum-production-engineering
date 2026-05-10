@@ -3,46 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petroleum Production Engineering - Dashboard</title>
+    <title>Unit 2 Numericals Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
+        .section-title {
+            font-size: 2rem;
+            color: #a5b4fc;
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
         .dashboard-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+            margin-bottom: 2rem;
         }
         .unit-card {
             display: block;
             text-decoration: none;
             color: inherit;
-            padding: 2rem;
+            padding: 2.5rem;
             text-align: center;
             border-radius: 20px;
             background: var(--glass-bg);
             backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--glass-border);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .unit-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
             border-color: rgba(255,255,255,0.2);
         }
+        .unit-card.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
         .unit-card h2 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: #f8fafc;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
         }
         .unit-card p {
-            color: var(--text-muted);
+            color: #94a3b8;
+            font-size: 1.1rem;
         }
         .icon-wrapper {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .note-text {
+            color: #cbd5e1;
+            font-style: italic;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #818cf8;
+            border-radius: 0 8px 8px 0;
         }
     </style>
 </head>
@@ -54,23 +78,42 @@
     
     <div class="container">
         <header class="glass-panel">
-            <h1>Petroleum Production Engineering</h1>
-            <p class="subtitle">Interactive Portfolio & Numericals Dashboard</p>
+            <h1>Unit 2 Numericals</h1>
+            <p class="subtitle">Petroleum Production Engineering</p>
         </header>
 
+        <!-- Pre Midsem Section -->
+        <h2 class="section-title">Pre Midsem</h2>
         <div class="dashboard-grid">
-            <!-- Unit 2 Card -->
-            <a href="UNIT_2_POST_MIDSEM/index.html" class="unit-card">
-                <div class="icon-wrapper">📊</div>
-                <h2>Unit 2</h2>
-                <p>Post Midsem Numericals (Tubing Performance & Gilbert Curves)</p>
+            <a href="#" class="unit-card disabled">
+                <div class="icon-wrapper">📚</div>
+                <h2>PPT Questions (2)</h2>
+                <p>Pending solutions</p>
             </a>
             
-            <!-- Future Unit Placeholder -->
-            <a href="#" class="unit-card" style="opacity: 0.5; cursor: not-allowed;" onclick="event.preventDefault();">
-                <div class="icon-wrapper">⏳</div>
-                <h2>Unit 1</h2>
-                <p>Pre Midsem Numericals (Coming Soon)</p>
+            <a href="#" class="unit-card disabled">
+                <div class="icon-wrapper">📝</div>
+                <h2>Self-do PPT Questions (2)</h2>
+                <p>Pending solutions</p>
+            </a>
+        </div>
+
+        <!-- Post Midsem Section -->
+        <h2 class="section-title">Post Midsem</h2>
+        <div class="note-text">
+            <strong>Note:</strong> All 6 Post Midsem questions were discussed in class (as far as I remember).
+        </div>
+        <div class="dashboard-grid">
+            <a href="#" class="unit-card disabled">
+                <div class="icon-wrapper">📘</div>
+                <h2>PPT Questions (3)</h2>
+                <p>Pending solutions</p>
+            </a>
+            
+            <a href="post_midsem_self/index.html" class="unit-card" style="border-color: #6366f1; background: rgba(99, 102, 241, 0.05);">
+                <div class="icon-wrapper">✅</div>
+                <h2>Self Questions (3)</h2>
+                <p>Completed: Graphical analysis for tubing performance</p>
             </a>
         </div>
     </div>
