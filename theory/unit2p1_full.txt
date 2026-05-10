@@ -1,0 +1,560 @@
+=== PAGE 1 ===
+03-02-2026
+1
+MODULE-5
+RESERVOIR CONSIDERATIONS
+PACKERS, TUBULAR AND FLOW LINES
+By
+GAURAV HAZARIKA
+Assistant Professor
+Department of Petroleum Engineering
+School of Energy Technology, PDEU
+PETROLEUM PRODUCTION ENGINEERING
+Gaurav Hazarika, Asst. Professor, PDEU
+1
+Tubulars
+•
+Most oil wells produce reservoir fluids through tubing strings.
+•
+Production tubing is a wellbore tubular used to produce reservoir fluids.
+•
+It forms the conduit for the reservoir fluids to flow from well bore to surface.
+•
+Typically, tubing is run inside a casing or liner but can also be cemented in
+slim-hole wells as the casing.
+•
+Depending on the type of completion, one or two tubing strings may be used
+in the well.
+•
+Production tubing is assembled with other completion components to make
+up the production string.
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 2 ===
+03-02-2026
+2
+Tubulars
+•
+Should be compatible with the wellbore geometry, reservoir production
+characteristics and the reservoir fluids.
+•
+Provide good sealing performance and allow the use of gas expansion to lift
+oil.
+•
+Gas wells produce gas through tubing strings to reduce liquid loading
+problems.
+•
+Tubing strings are designed considering tension, collapse, and burst loads
+under various well-operating conditions to prevent loss of tubing string
+integrity including mechanical failure and deformation due to excessive
+stresses and buckling.
+Gaurav Hazarika, Asst. Professor, PDEU
+Functions of Tubing
+•
+It is essential for well killing, circulation and work over.
+•
+Tubing provides optimized flow channel to produce optimum/maximum
+efficient rate from a well.
+•
+Tubing is used to isolate casing from effect of high pressure, high temperature
+and corrosive fluids.
+•
+It facilitates completion, production and control of flow in multiple commingled
+or parallel completion.
+•
+It is essential for most common artificial lift operations.
+•
+It facilitates the installation of common wire line operated down whole tools.
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 3 ===
+03-02-2026
+3
+Packer
+•
+Production packers are an integral part of the completion process of an oil or
+a gas well.
+•
+Provides a means of sealing the tubing string from the casing thereby
+preventing communication of fluids.
+•
+Casing used in a well is a permanent component of the complete system,
+repair/replacement of casing is very complicated and expensive, whereas the
+packer along with the tubing string is easier to remove and replace.
+•
+Packers are sometimes run when they serve no useful purpose, resulting in
+unnecessary initial investment and the possibility of high future removal cost.
+Gaurav Hazarika, Asst. Professor, PDEU
+Uses of Packer
+•
+Routine use of packers should be limited to certain situations:
+1. Protection of casing from pressure (including both well and stimulation
+pressures) and corrosive fluids
+2. Isolation of casing leaks, squeezed perforations, or multiple producing
+intervals.
+3. Elimination of inefficient "heading" or "surging".
+4. Some artificial lift installations.
+5. In conjunction with subsurface safety valves.
+6. To hold kill fluids or treating fluids in casing annulus.
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 4 ===
+03-02-2026
+4
+• Retrievable: They are run in an integral part of the tubing
+string. They are set either mechanically or hydraulically and
+can he released by pulling or rotating the tubing.
+• Permanent: This type of packer once set, can only be
+removed destructively by milling. Permanent packers can be
+set mechanically, hydraulically or electrically (wire line or
+explosive set) is required.
+• Permanent – retrievable: Combination
+Types of Packer
+Gaurav Hazarika, Asst. Professor, PDEU
+Types of Packer
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 5 ===
+03-02-2026
+5
+• There are three basic ways to complete a well;
+1. Open-hole
+2. Cased and perforated
+3. Liner completion
+Well Completion Methods
+Gaurav Hazarika, Asst. Professor, PDEU
+•
+In
+the
+open-hole
+type
+of
+completion, casing is set only to
+the top of or slightly into the
+completion interval
+•
+In this case the production casing
+is set on top of or slightly into the
+pay zone and cemented
+•
+The pay zone is left open and un-
+cemented
+Open Hole
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 6 ===
+03-02-2026
+6
+•
+Casing set at the top of the pay allows for special drilling techniques
+which minimize formation damage.
+•
+Full-hole diameter available to flow.
+•
+No perforation is required (open-hole perforating is sometimes used in
+cases of severe wellbore damage).
+•
+Hole -is easily deepened or converted to a liner completion.
+•
+High productivity maintained when gravel packed for sand control.
+•
+Facilitates ultra short radius multiple radial completion.
+Open Hole: Advantages
+Gaurav Hazarika, Asst. Professor, PDEU
+•
+No way to regulate fluid flow from or into wellbore.
+•
+Cannot control gas or water production effectively. No selective gas or water shut
+off job is possible.
+•
+Casing is set "in the dark".
+•
+Formation top is generally picked from drill cuttings. Difficult to selectively
+stimulate producing intervals (however, open-hole packers available are used
+sometimes).
+•
+Wellbore may require periodic cleanout. Formation collapse is more common.
+•
+Requires more drilling rig time when completed.
+•
+Subsequent cased completion will restrict wellbore and completion string diameter.
+Open Hole Disadvantages
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 7 ===
+03-02-2026
+7
+•
+In the cased and perforated completion, casing is set through the
+producing formation and cemented. The casing is then perforated to
+provide communication between' the wellbore and formation
+Cased Hole Completion
+Gaurav Hazarika, Asst. Professor, PDEU
+•
+Ease of selective completion and work overoperation in the producing
+intervals.
+•
+Can
+effectively
+control
+gas
+and
+water
+producing
+by.
+Selectivelyperforating and isolating.
+•
+Can effectively control and monitor zonal fluid production. Permits
+multiple completions,
+•
+Can "stimulate selectively, DSTs, logs and formation samples provide
+information on casing setting depth.
+•
+Can be adopted to sand control, both as prepack gravel pack or
+conventional gravel pack.
+Cased Hole Advantages
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 8 ===
+03-02-2026
+8
+•
+Long interval perforation can be expensive.
+•
+Effective wellbore diameter and productivity .may be reduced.
+•
+Good cement job through production intervals required.
+•
+More expensive than open-hole.
+Cased Hole Disadvantages
+Gaurav Hazarika, Asst. Professor, PDEU
+•
+In a liner completion casing run is to the top of
+the pay and a liner is set across the producing
+formation.
+Liner Completion
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 9 ===
+03-02-2026
+9
+MODULE-6
+RESERVOIR CONSIDERATIONS
+LINER COMPLETIONS
+By
+GAURAV HAZARIKA
+Assistant Professor
+Department of Petroleum Engineering
+School of Energy Technology, PDEU
+PETROLEUM PRODUCTION ENGINEERING
+Gaurav Hazarika, Asst. Professor, PDEU
+17
+•
+The liner may be or may not be cemented
+•
+The cemented liner is perforated whereas un-cemented liner is slotted.
+•
+This type of completion is primarily applied to sand control, but could be
+used to control a sloughing formation.
+•
+Completions using cemented liners to reduce casing costs are
+essentially considered cased and perforated completions.
+•
+The advantages and disadvantages of the un-cemented liner completion
+are the same as the open-hole completion.
+Liner Completion
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 10 ===
+03-02-2026
+10
+• Entire pay zone open to the wellbore.
+• No perforation cost.
+• Log interpretation is not critical.
+• Adaptable to special sand control methods.
+• Cleanout problem is avoided in screen liner.
+• Wire wrapped screens can be placed later.
+Un-cemented Liner Completion: Advantages
+Gaurav Hazarika, Asst. Professor, PDEU
+• Excessive water or gas is difficult to control.
+• Casing is set before pay zones are drilled and logged.
+• Selective stimulation is not possible.
+Un-cemented Liner Completion: Disadvantage
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 11 ===
+03-02-2026
+11
+• Formation damage is minimized.
+• Selective stimulation is possible in cemented liner.
+• Perforation expense is avoided in screen liner.
+• Cleanout problem is avoided in screen liner.
+Cemented Liner Completion: Advantage
+Gaurav Hazarika, Asst. Professor, PDEU
+• Diameter across the pay is minimized
+• Good quality cementation is difficult in cemented liner.
+• Log interpretation is critical.
+• Perforating, cementing and rig time incurs additional costs.
+Cemented Liner Completion: Advantage
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 12 ===
+03-02-2026
+12
+MODULE-7
+RESERVOIR CONSIDERATIONS
+INFLOW PERFORMANCE AND PRODUCTIVITY INDEX
+By
+GAURAV HAZARIKA
+Assistant Professor
+Department of Petroleum Engineering
+School of Energy Technology, PDEU
+PETROLEUM PRODUCTION ENGINEERING
+Gaurav Hazarika, Asst. Professor, PDEU
+23
+•
+Production tests are done routinely to physically measure oil, gas and
+water produced by a particular well with a fixed bean or chalk size.
+•
+This test provide periodic physical evidence of well conditions.
+•
+Unexpected changes, such as extraneous water or gas production may
+signal well or reservoir problems.
+•
+Abnormal production declines may mean artificial lift problems, sand fill
+up in the casing, scale buildup in the perforations, etc.
+Periodic Production Test
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 13 ===
+03-02-2026
+13
+Performance Plot
+Gaurav Hazarika, Asst. Professor, PDEU
+•
+It involves a physical or empirical determination of produced fluid flow
+vs. pressure drawdown, ΔP.
+•
+Results are used to determine optimum production rate/fluid withdrawal
+& to select completion method & production facility.
+•
+This is a successfully applied to non-darcy, below the bubble point flow
+conditions, even though fluid properties and relative permeabilities are
+not constant around the wellbore.
+•
+It does not permit calculation of formation permeability or the degree of
+abnormal flow restriction (formation damage) near the wellbore.
+Productivity or Deliverability Test (Bean study)
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 14 ===
+03-02-2026
+14
+•
+Deliverability tests represent stabilized producing conditions.
+•
+It involves the measurement of bottomhole static and flowing pressure,
+as well as fluid rates produced to the surface.
+•
+Commonly used deliverability tests for oil wells may be classified as:
+•
+Productivity index
+•
+Inflow performance
+Productivity or Deliverability Test (Bean study)
+Gaurav Hazarika, Asst. Professor, PDEU
+•
+In an oil well the productivity index test (or indicator diagram study) is
+the simplest form of deliverability. It is define by the equation:
+𝐏𝐈= 𝐉=
+𝐐𝐨
+𝐏𝐬−𝐏𝐰𝐟
+= Q୭
+∆𝐏
+•
+Where,
+Q
+= Flow rate, m3/day (or bbl/day)
+Ps
+= Shut in pressure (kg/cm2 or psi)
+Pwf = Flowing reservoir pressure (kg/cm2 or psi)
+ΔP = Pressure draw down (kg/cm2 or psi)
+Productivity or Deliverability Test (Bean study)
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 15 ===
+03-02-2026
+15
+•
+It consists of measurement of shut-in bottom hole pressure (SBHP); and,
+at one stabilized producing conditions which includes, measurement of
+the flowing bottom bole pressure and the corresponding rate of liquids
+produced to the surface.
+•
+The equation of the indicator line is
+𝑸𝒐= 𝑱𝑷𝒔−𝑷𝒘𝒇
+𝒏= 𝑱∆𝑷𝒏
+•
+Where, ‘J’ and ‘n’ are indices.
+•
+‘J’ is the productivity index and its unit is m3/day/kg/cm2 or bbl/day/psi
+•
+‘n’ (is not less than 1).
+Indicator Diagram Study
+Gaurav Hazarika, Asst. Professor, PDEU
+Indicator Diagram Study
+•
+There are different types of indicator lines are obtained depending upon
+the value of ‘n’
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 16 ===
+03-02-2026
+16
+•
+Type 1: When n=1; the indicator curve is a straight line and passes
+through the origin. It represents the case of a steady, state single-phase
+fluid flow that follows the linear law of filtration (Darcy’s Law).
+•
+Type-2: When n<1, the shape of the indicator diagram is straight initially
+but as reservoir pressure goes below saturation pressure or bubble point
+pressure (Pb) curve becomes convex in shape in relation to the q-axis.
+The curving of the indicator line indicates the deviation from the linear
+low of filtration in the bottom-hole zone. This type of indicator line may
+be due to the appearance of a two-phase flow. From this point of
+divergence in the straight line saturation pressure can be approximately
+evaluated.
+Indicator Diagram Study
+Gaurav Hazarika, Asst. Professor, PDEU
+•
+Type 3: When n<1, the shape of the curve is convex to q axis, since
+beginning, due to turbulent flow. When the recovery mechanism of the
+reservoir is other than water drive (i.e., solution gas drive or gravity
+drive), the indicator line of this type is observed.
+•
+Type 4: When n>1; when the production rates and flowing bottom hole
+pressure are not stabilized. The shape of the curve is concave in relation
+to q axis. This may be obtained due to errors in measuring flowing
+bottom-hole pressure and oil rates. Such indicator line results from
+unsteady flow in the formation.
+Indicator Diagram Study
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 17 ===
+03-02-2026
+17
+•
+A productivity test was conducted on a well. The test results indicate that
+the well is capable of producing at a stabilized flow rate of 110 STB/day
+and a bottom-hole flowing pressure of 900 psi. After shutting the well for
+24 hours, the bottom-hole pressure reached a static value of 1,300 psi.
+•
+Calculate:
+•
+Productivity index
+•
+AOF
+•
+Oil flow rate at a bottom-hole flowing pressure of 600 psi
+•
+Wellbore flowing pressure required to produce 250 STB/day
+Problem 1
+Gaurav Hazarika, Asst. Professor, PDEU
+•
+PI = 0.275 STB/psi
+•
+AOF = 375.5 STB/day
+•
+192.5 STB/day
+•
+390.9 psi
+Solution
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 18 ===
+03-02-2026
+18
+•
+A well is produced from a saturated oil reservoir with an average
+reservoir pressure of 3,000 psig. Stabilized flow test data indicate that the
+well is capable of producing 400 STB/day at a bottom-hole flowing
+pressure of 2,580 psig. (Assume a constant J)
+a) Oil flow rate at Pwf = 1950 psig
+b) Productivity Index
+c) AOF
+d) Plot the IPR curve
+Problem 2
+Gaurav Hazarika, Asst. Professor, PDEU
+a) Oil flow rate (at Pwf = 1950 psig): 1000 STB/day
+b) Productivity index: 0.952 STB/day/psi
+c) AOF: 2857.14 STB/day
+Solution
+0
+1000
+2000
+3000
+4000
+0
+1000
+2000
+3000
+Ps (psi)
+q (STB/day)
+IPR
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 19 ===
+03-02-2026
+19
+Test Your Understanding
+•
+Discuss about the role of tubulars and packers in petroleum production from
+subsurface formations.
+15 Marks
+•
+Discuss about the various types of completion along with their schematic
+diagrams and their purpose for the oil and gas production.
+15 Marks
+•
+Discuss the advantages and disadvantages of the various
+types of
+completions used in oil and gas industry.
+15 Marks
+Gaurav Hazarika, Asst. Professor, PDEU
+•
+A productivity test was conducted on a well. The test results indicate that
+the well is capable of producing at a stabilized flow rate of 110 STB/day
+and a bottom-hole flowing pressure of 900 psi. After shutting the well for
+24 hours, the bottom-hole pressure reached a static value of 1,300 psi.
+•
+Calculate:
+•
+Productivity index
+•
+AOF
+•
+Oil flow rate at a bottom-hole flowing pressure of 600 psi
+•
+Wellbore flowing pressure required to produce 250 STB/day
+15 Marks
+Test Your Understanding
+Note: Values will be changed for exam
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 20 ===
+03-02-2026
+20
+•
+A well is produced from a saturated oil reservoir with an average
+reservoir pressure of 3,000 psig. Stabilized flow test data indicate that the
+well is capable of producing 400 STB/day at a bottom-hole flowing
+pressure of 2,580 psig. (Assume a constant J)
+a) Oil flow rate at Pwf = 1950 psig
+b) Productivity Index
+c) AOF
+d) Plot the IPR curve
+15 Marks
+Test Your Understanding
+Note: Values will be changed for exam
+Gaurav Hazarika, Asst. Professor, PDEU
+

@@ -1,0 +1,379 @@
+=== PAGE 1 ===
+12-01-2026
+1
+PRE MODULE
+COURSE BRIEF
+COURSE INTRODUCTION
+By
+GAURAV HAZARIKA
+Assistant Professor
+Department of Petroleum Engineering
+School of Energy Technology, PDEU
+PETROLEUM PRODUCTION ENGINEERING
+Gaurav Hazarika, Asst. Professor, PDEU
+• Course
+Petroleum Production Engineering
+• Course Code
+20PEBOE01
+Day & Timing 
+04:15 AM to 06:10 AM (Monday)
+04:15 PM to 05:10 PM  (Tuesday)
+• Credit
+3-0-0 ( 3 Lectures)
+• Venue
+E-105
+• Faculty Details
+Gaurav Hazarika
+Course Details
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 2 ===
+12-01-2026
+2
+Syllabus 
+UNIT-1: Petroleum Production Engineering
+10 Hrs.
+•
+Role of Production Engineer/activities performed at various levels of field
+development and its exploitation. Petroleum Production System-Well
+Head Equipment, Charismas tree, valves, hangers.
+UNIT-2: Reservoir Considerations
+9 Hrs.
+•
+Flow control devices , Packers , Tubular and Flow Lines, Productivity
+Index, Inflow Performance, Tubing performance relation, Formation
+Damage and Well Stimulation.
+Gaurav Hazarika, Asst. Professor, PDEU
+Syllabus 
+UNIT-3: Introduction to Artificial Lift Techniques
+10 Hrs.
+•
+Principle and application of artificial lift methods- rod pumps(SRP), Gas
+Lift(Continuous/Intermittent),
+Progressive
+Cavity
+Pump(PCP),Electric
+Submersible Pump(ESP), Hydraulic Lifts(Jet Pumps).
+UNIT-4: Offshore Production System
+10 Hrs.
+•
+Introduction; Offshore Production System-Fixed and Floating Production
+Platform-Mooring and Anchoring , Deep water Technology, Subsea
+production system, Flow assurance in deep sea, New Technologies.
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 3 ===
+12-01-2026
+3
+CO’s
+CO1: Understand the role of a production engineer and comprehend the
+petroleum production system
+CO2: Understand wellbore performance and well stimulation techniques
+CO3: Examine artificial lift techniques used in oil and gas industry
+CO4: Evaluate use of artificial lift techniques used in oil and gas Industry
+CO5: Analyse various types of shallow and deep water production
+platforms
+CO6: Evaluate various offshore production system and deep water
+technologies
+Gaurav Hazarika, Asst. Professor, PDEU
+References
+•
+Dr. Guo Boyun, Computer Aided Petroleum Production Engineering
+•
+Deep water Petroleum Exploration & Production - By Willium Leffler, Richard
+Pattardozzi, Gordon Sterling
+•
+Floating Production System - By N.K.Mitra
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 4 ===
+12-01-2026
+4
+MODULE-1
+PETROLEUM PRODUCTION ENGINEERING
+SURFACE FACILITIES
+By
+GAURAV HAZARIKA
+Assistant Professor
+Department of Petroleum Engineering
+School of Energy Technology, PDEU
+PETROLEUM PRODUCTION ENGINEERING
+Gaurav Hazarika, Asst. Professor, PDEU
+Petroleum Production Engineering
+• Production engineering is a
+part of petroleum engineering
+that attempts to maximize oil
+and gas production in a cost-
+effective manner.
+• Production engineers need to
+have a thorough understanding
+of the petroleum production
+systems with which they work.
+
+=== PAGE 5 ===
+12-01-2026
+5
+Production System
+•
+The principles of fluid flow through the production system is
+important in estimating the performance of individual wells and
+optimizing well and reservoir productivity
+•
+The production system is the system that transports reservoir fluids
+from the subsurface reservoir to the surface, processes and treats
+the fluids, and prepares the fluids for storage and transport to a
+purchaser/sales points/refinery.
+Production System
+•
+The basic elements of the production system include the reservoir,
+wellbore, tubular goods and associated equipment, surface wellhead,
+flowlines, processing facilities and artificial lift equipment
+
+=== PAGE 6 ===
+12-01-2026
+6
+Production System
+Gaurav Hazarika, Asst. Professor, PDEU
+MODULE-2
+PETROLEUM PRODUCTION ENGINEERING
+COURSE INTRODUCTION
+By
+GAURAV HAZARIKA
+Assistant Professor
+Department of Petroleum Engineering
+School of Energy Technology, PDEU
+PETROLEUM PRODUCTION ENGINEERING
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 7 ===
+12-01-2026
+7
+•
+The group gathering system consists of flow lines from a well/wells to a
+centralized Group Gathering Station.
+•
+Radial gathering system
+•
+Axial gathering system
+Surface Gathering System
+Gaurav Hazarika, Asst. Professor, PDEU
+Production System
+Well Head
+Separator
+Header
+Heater Treater
+Storage Tank
+
+=== PAGE 8 ===
+12-01-2026
+8
+Production System
+•
+The reservoir is the source of crude
+oil and gas for the production
+system.
+•
+It is the porous and permeable
+media in which the reservoir fluids
+are stored and through which the
+fluids will flow to the wellbore.
+•
+It also furnishes the primary energy
+for the production system.
+Reservoir
+MODULE-3
+PETROLEUM PRODUCTION ENGINEERING
+ROLE OF PETROLEUM PRODUCTION ENGINEERS
+By
+GAURAV HAZARIKA
+Assistant Professor
+Department of Petroleum Engineering
+School of Energy Technology, PDEU
+PETROLEUM PRODUCTION ENGINEERING
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 9 ===
+12-01-2026
+9
+Role of Production Engineers
+•
+The role of a production engineer is to maximize oil and gas production
+in a cost-effective manner.
+•
+Familiarization and understanding of oil and gas production systems are
+essential to the engineers.
+•
+A complete oil or gas production system consists of a reservoir, well,
+flowline, separators, pumps, and transportation pipelines.
+Well to Christmas Tree
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 10 ===
+12-01-2026
+10
+Well to Christmas Tree
+Gaurav Hazarika, Asst. Professor, PDEU
+Well to Christmas Tree
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 11 ===
+12-01-2026
+11
+Activities of Petroleum Production Engineer
+Gaurav Hazarika, Asst. Professor, PDEU
+Activities of Petroleum Production Engineer
+Gaurav Hazarika, Asst. Professor, PDEU
+Production
+Activities
+Production Optimization 
+(Nodal-Analysis)
+Production & Injection 
+Initiation
+Revival & Enhancement of  
+Productivity & Injectivity
+Other Activities
+
+=== PAGE 12 ===
+12-01-2026
+12
+Nodal Analysis
+•
+Well Completion, Testing & Services
+•
+Surface Facilities (Transportation & Processing)
+•
+Pipeline
+•
+Installations
+•
+Platforms
+•
+Plants, etc.
+•
+Continuous Production/Injection Maintenance, Monitoring, etc.
+Production or Injection Initiation
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 13 ===
+12-01-2026
+13
+Development of Surface Facilities
+•
+Depending on the type of crude and its properties a host of other facilities are
+setup:
+•
+Heater treaters
+•
+Bath heaters
+•
+De-emulsification plants
+•
+Crude/gas sweetening set up
+•
+Chemical injection, etc.
+•
+Depending upon the magnitude and scale of operations the various requirements
+quadruple.
+MODULE-4
+PETROLEUM PRODUCTION ENGINEERING
+ROLE OF PETROLEUM PRODUCTION ENGINEERS-II
+By
+GAURAV HAZARIKA
+Assistant Professor
+Department of Petroleum Engineering
+School of Energy Technology, PDEU
+PETROLEUM PRODUCTION ENGINEERING
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 14 ===
+12-01-2026
+14
+•
+Well Stimulation
+•
+Water & Gas Control
+•
+Sand Control
+•
+Artificial Lift
+•
+Workover
+Revival & Enhancement of   Well Productivity/Injectivity
+Gaurav Hazarika, Asst. Professor, PDEU
+Artifical Lift
+•
+In case the reservoir is unable to furnish sufficient energy to produce
+fluids to the surface, artificial lift equipment is used to enhance
+production rates by adding energy to the production system.
+•
+This component of the system is composed of both surface and
+subsurface elements.
+•
+This additional energy can be furnished directly to the fluid through
+subsurface pumps, by reducing the backpressure at the reservoir with
+surface compression equipment to lower wellhead pressure, or by
+injecting gas into the production string to reduce the flowing gradient of
+the fluid.
+
+=== PAGE 15 ===
+12-01-2026
+15
+Artificial Lift Photos
+Plunger Pump
+ESP
+Gas Lift
+SRP
+PCP
+•
+Field / Well Problem Diagnosis
+•
+Corrosion Control
+•
+Field development
+•
+EOR facilities
+•
+Repair & maintenance of flowline
+•
+Plants handling & maintenance
+•
+Well Maintenance Activities
+Other Activities
+Gaurav Hazarika, Asst. Professor, PDEU
+
+=== PAGE 16 ===
+12-01-2026
+16
+•
+Hot oil circulation
+•
+Scrapping
+•
+Nitrogen & Compressor applications
+•
+Steam application
+•
+Flow line flushing
+Well Maintenance Activities
+Gaurav Hazarika, Asst. Professor, PDEU
+Test Your Understanding
+•
+Discuss about the Petroleum Production System from the wells to the
+Surface Processing Facility/Group Gathering Station (GGS)?
+20 Marks
+•
+Discuss with diagram the different types of gathering used in the Upstream
+Oil and Gas Industry?
+10 Marks
+•
+Discuss the roles and activities performed by a Petroleum Production
+Engineer. Analyze and discuss any 5 production activities where the role of a
+(Chemical/Mechanical/Civil/Computer/Electrical Engineer) plays an integral
+part in production of Oil and gas.
+10+5 Marks
+•
+Draw and demarcate the well head equipment used in the Upstream Oil and
+Gas Industry? Also discuss which valves are operated so that the oil flow is
+directed towards the surface facility
+10 Marks
+

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1 – Petroleum Production System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <style>
+        .hero { background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(236,72,153,0.1)); border-radius: 24px; padding: 3rem 2rem; text-align: center; margin-bottom: 3rem; border: 1px solid rgba(255,255,255,0.1); }
+        .flowchart { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin: 2rem 0; }
+        .flow-node { background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.4); border-radius: 12px; padding: 0.6rem 1.2rem; font-size: 0.9rem; font-weight: 500; color: #a5b4fc; position: relative; }
+        .flow-arrow { display: flex; align-items: center; color: #6366f1; font-size: 1.2rem; }
+        .q-card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 20px; padding: 2rem; margin-bottom: 2.5rem; backdrop-filter: blur(16px); }
+        .q-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .q-badge { background: linear-gradient(135deg, #6366f1, #ec4899); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; white-space: nowrap; }
+        .marks-badge { background: rgba(245,158,11,0.2); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-left: auto; }
+        .q-title { font-size: 1.3rem; font-weight: 600; color: #f8fafc; }
+        .q-question { background: rgba(99,102,241,0.08); border-left: 3px solid #6366f1; padding: 1rem 1.2rem; border-radius: 0 10px 10px 0; margin-bottom: 1.5rem; color: #cbd5e1; font-style: italic; }
+        .answer-section h4 { color: #a5b4fc; font-size: 1rem; margin: 1.2rem 0 0.6rem; display: flex; align-items: center; gap: 0.4rem; }
+        .answer-section p, .answer-section li { color: #cbd5e1; line-height: 1.8; }
+        .answer-section ul, .answer-section ol { margin-left: 1.5rem; }
+        .answer-section li { margin-bottom: 0.4rem; }
+        .diagram-box { border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); margin: 1.2rem 0; }
+        .diagram-box img { width: 100%; display: block; }
+        .diagram-caption { text-align: center; color: #64748b; font-size: 0.85rem; padding: 0.5rem; background: rgba(0,0,0,0.2); }
+        .bluff-box { background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(16,185,129,0.05)); border: 1px solid rgba(16,185,129,0.3); border-radius: 14px; padding: 1.2rem 1.5rem; margin-top: 1.5rem; }
+        .bluff-box h5 { color: #34d399; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem; font-size: 0.95rem; }
+        .bluff-box p, .bluff-box li { color: #86efac; font-size: 0.9rem; line-height: 1.7; }
+        .bluff-box ul { margin-left: 1.2rem; }
+        .key-point { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.2); border-radius: 10px; padding: 0.8rem 1rem; margin: 0.6rem 0; color: #fde68a; font-size: 0.9rem; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .back-btn { color: #818cf8; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; margin-bottom: 1.5rem; font-weight: 500; }
+        .section-divider { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 3rem 0; }
+        @media(max-width:768px){ .two-col { grid-template-columns: 1fr; } .q-title { font-size: 1.1rem; } }
+        body.light-mode .q-question { color: #374151; }
+        body.light-mode .answer-section p, body.light-mode .answer-section li { color: #374151; }
+        body.light-mode .bluff-box p, body.light-mode .bluff-box li { color: #065f46; }
+    </style>
+</head>
+<body>
+<div class="background-elements"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+<div class="container">
+    <a href="../index.html" class="back-btn">← Back to Theory Dashboard</a>
+
+    <!-- Hero -->
+    <div class="hero">
+        <div style="font-size:3.5rem; margin-bottom:0.8rem;">🛢️</div>
+        <h1 style="font-size:2.5rem; margin-bottom:0.6rem;">Unit 1</h1>
+        <p class="subtitle">Petroleum Production Engineering – Surface Facilities & Role of Engineers</p>
+        <div style="margin-top:1.5rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+            <span style="background:rgba(99,102,241,0.2);border:1px solid rgba(99,102,241,0.4);padding:0.4rem 1rem;border-radius:20px;font-size:0.85rem;color:#a5b4fc;">📋 4 Exam Questions</span>
+            <span style="background:rgba(245,158,11,0.2);border:1px solid rgba(245,158,11,0.4);padding:0.4rem 1rem;border-radius:20px;font-size:0.85rem;color:#fbbf24;">⏱️ 10 Hours</span>
+        </div>
+    </div>
+
+    <!-- Flowchart -->
+    <div class="q-card">
+        <h2 style="color:#a5b4fc; margin-bottom:1rem;">📌 Topic Flow</h2>
+        <div class="flowchart">
+            <div class="flow-node">Petroleum Production Engineering</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">Production System Components</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">Surface Gathering</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">Wellhead Equipment</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">Christmas Tree</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">Role of Production Engineer</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">4 Activity Categories</div>
+        </div>
+        <p style="color:#64748b; font-size:0.85rem; text-align:center; margin-top:1rem;">All 4 "Test Your Understanding" questions come directly from these topics.</p>
+    </div>
+
+    <!-- Q1 -->
+    <div class="q-card">
+        <div class="q-header">
+            <span class="q-badge">Q1</span>
+            <span class="q-title">Petroleum Production System – Well to GGS</span>
+            <span class="marks-badge">20 Marks</span>
+        </div>
+        <div class="q-question">
+            "Discuss about the Petroleum Production System from the wells to the Surface Processing Facility / Group Gathering Station (GGS)?"
+        </div>
+        <div class="answer-section">
+            <h4>🔑 Definition</h4>
+            <p>The <strong>Production System</strong> is the complete system that transports reservoir fluids from the subsurface reservoir to the surface, processes and treats the fluids, and prepares them for storage and transport to a purchaser / sales point / refinery.</p>
+
+            <h4>⚙️ Basic Elements (Mention ALL of these)</h4>
+            <div class="two-col">
+                <div>
+                    <ul>
+                        <li><strong>Reservoir</strong> – porous & permeable source of crude oil/gas; provides primary energy</li>
+                        <li><strong>Wellbore</strong> – drilled hole connecting reservoir to surface</li>
+                        <li><strong>Tubular goods</strong> – tubing, casing, and associated equipment inside wellbore</li>
+                        <li><strong>Surface Wellhead / Christmas Tree</strong> – pressure control at surface</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><strong>Flowlines</strong> – carry produced fluids from wellhead to facilities</li>
+                        <li><strong>Separator</strong> – separates oil, gas, and water</li>
+                        <li><strong>Heater Treater</strong> – removes water from crude oil by heat</li>
+                        <li><strong>Storage Tanks</strong> – temporary crude storage before dispatch</li>
+                        <li><strong>Artificial Lift Equipment</strong> – when reservoir energy is insufficient</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4>🗺️ Flow Path: Well → GGS</h4>
+            <div class="key-point">Reservoir → Wellbore → Wellhead → Flowline → Header → Separator → Heater Treater → Storage Tank → GGS / Refinery</div>
+
+            <h4>📊 Diagram</h4>
+            <div class="diagram-box">
+                <img src="images/production_system_diagram.png" alt="Production System Diagram">
+                <div class="diagram-caption">Fig 1: Complete Petroleum Production System layout</div>
+            </div>
+
+            <h4>🏭 Surface Gathering Systems</h4>
+            <p>The group gathering system consists of flow lines from well(s) to a centralized <strong>Group Gathering Station (GGS)</strong>. Two types:</p>
+            <ul>
+                <li><strong>Radial Gathering System</strong> – wells arranged radially around the GGS; flowlines radiate outward like spokes</li>
+                <li><strong>Axial Gathering System</strong> – wells are arranged linearly along a main pipeline (trunk line); used in elongated field structures</li>
+            </ul>
+
+            <div class="bluff-box">
+                <h5>✨ Bluff Tip</h5>
+                <ul>
+                    <li>Mention that the production system is optimized using <em>Nodal Analysis</em> — this impresses the examiner.</li>
+                    <li>State: <em>"The production engineer attempts to maximize oil and gas production in a cost-effective manner by optimizing each node of the production system."</em></li>
+                    <li>Draw a simple box-flow diagram: Reservoir → Wellbore → Tubing → Wellhead → Flowline → Separator → GGS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q-card">
+        <div class="q-header">
+            <span class="q-badge">Q2</span>
+            <span class="q-title">Types of Gathering Systems</span>
+            <span class="marks-badge">10 Marks</span>
+        </div>
+        <div class="q-question">
+            "Discuss with diagram the different types of gathering used in the Upstream Oil and Gas Industry?"
+        </div>
+        <div class="answer-section">
+            <h4>📡 What is a Gathering System?</h4>
+            <p>A gathering system collects produced fluids from individual wells and brings them to a central processing facility (GGS). It consists of flowlines, headers, and trunk lines.</p>
+
+            <h4>🔵 Type 1: Radial Gathering System</h4>
+            <ul>
+                <li>Wells are distributed <strong>radially</strong> around a central GGS</li>
+                <li>Each well has its own dedicated flowline connecting directly to GGS</li>
+                <li>Best suited for <strong>circular or compact field areas</strong></li>
+                <li>Simple and easy to monitor individual wells</li>
+                <li>Higher capital cost as each well needs a separate line</li>
+            </ul>
+
+            <h4>🟣 Type 2: Axial (Trunk Line) Gathering System</h4>
+            <ul>
+                <li>Wells connect to a <strong>central trunk line</strong> (main pipeline) via lateral flowlines</li>
+                <li>Best suited for <strong>elongated or linear field structures</strong></li>
+                <li>More economical for large fields as pipelines are shared</li>
+                <li>Flow direction is predominantly one-directional toward GGS</li>
+            </ul>
+
+            <div class="key-point">💡 In exams: Always draw a simple schematic showing wells, flowlines, and GGS for each type. Label everything.</div>
+
+            <div class="bluff-box">
+                <h5>✨ Bluff Tip</h5>
+                <p>Add a line: <em>"The choice of gathering system depends on the field geometry, number of wells, terrain, and economic considerations. In modern fields, a hybrid system combining both radial and axial principles is often employed."</em></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q-card">
+        <div class="q-header">
+            <span class="q-badge">Q3</span>
+            <span class="q-title">Role & Activities of a Production Engineer</span>
+            <span class="marks-badge">15 Marks</span>
+        </div>
+        <div class="q-question">
+            "Discuss the roles and activities performed by a Petroleum Production Engineer. Analyze and discuss any 5 production activities where the role of a (Chemical/Mechanical/Civil/Computer/Electrical Engineer) plays an integral part."
+        </div>
+        <div class="answer-section">
+            <h4>🎯 Core Role</h4>
+            <p>A Production Engineer's primary role is to <strong>maximize oil and gas production in a cost-effective manner</strong>. They must have thorough understanding of the entire petroleum production system.</p>
+
+            <h4>📋 Four Activity Categories (MEMORIZE THIS)</h4>
+            <div class="two-col">
+                <div>
+                    <p><strong>1. Production Optimization (Nodal Analysis)</strong></p>
+                    <ul>
+                        <li>Well Completion, Testing & Services</li>
+                        <li>Surface Facilities (Transport & Processing)</li>
+                        <li>Pipeline & Platform management</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong>2. Production & Injection Initiation</strong></p>
+                    <ul>
+                        <li>Continuous Production/Injection Maintenance & Monitoring</li>
+                    </ul>
+                </div>
+                <div>
+                    <p><strong>3. Revival & Enhancement of Productivity</strong></p>
+                    <ul>
+                        <li>Well Stimulation (Acidizing, Fracturing)</li>
+                        <li>Water & Gas Control</li>
+                        <li>Sand Control</li>
+                        <li>Artificial Lift</li>
+                        <li>Workover operations</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong>4. Other Activities</strong></p>
+                    <ul>
+                        <li>Field/Well Problem Diagnosis</li>
+                        <li>Corrosion Control</li>
+                        <li>EOR Facilities</li>
+                        <li>Well Maintenance (Hot Oil Circulation, Scrapping, Nitrogen Application)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="diagram-box">
+                <img src="images/production_activities.png" alt="Production Activities Chart">
+                <div class="diagram-caption">Fig 2: Production Engineer Activity Categories</div>
+            </div>
+
+            <h4>🤝 Cross-Discipline Roles (Pick any 5)</h4>
+            <ul>
+                <li><strong>Chemical Engineer</strong> – Corrosion inhibitor selection, scale removal chemicals, EOR chemical flooding design</li>
+                <li><strong>Mechanical Engineer</strong> – Design of pumps (SRP, ESP, PCP), compressors, surface separators and vessels</li>
+                <li><strong>Civil Engineer</strong> – Platform and pipeline structural design, foundation engineering for offshore structures</li>
+                <li><strong>Computer/Software Engineer</strong> – Nodal analysis software, real-time production monitoring dashboards, SCADA systems</li>
+                <li><strong>Electrical Engineer</strong> – Power systems for ESP, motor control centers, cathodic protection for pipelines</li>
+            </ul>
+
+            <div class="bluff-box">
+                <h5>✨ Bluff Tip</h5>
+                <p>Conclude with: <em>"Modern petroleum production engineering is inherently multidisciplinary. The production engineer acts as the integrator, coordinating with all disciplines to ensure the seamless and safe production of hydrocarbons from reservoir to surface."</em></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q-card">
+        <div class="q-header">
+            <span class="q-badge">Q4</span>
+            <span class="q-title">Wellhead Equipment & Christmas Tree</span>
+            <span class="marks-badge">10 Marks</span>
+        </div>
+        <div class="q-question">
+            "Draw and demarcate the well head equipment used in the Upstream Oil and Gas Industry? Also discuss which valves are operated so that the oil flow is directed towards the surface facility."
+        </div>
+        <div class="answer-section">
+            <h4>🛠️ What is a Wellhead?</h4>
+            <p>The wellhead is the surface equipment at the top of a well that provides the structural and pressure-containing interface for the drilling and production equipment. It supports the casing strings and controls pressure.</p>
+
+            <h4>🌲 The Christmas Tree</h4>
+            <p>The Christmas Tree (Xmas Tree) is the assembly of valves, spools, and fittings connected to the top of the wellhead. It controls the flow of wellbore fluids and provides access to the tubing.</p>
+
+            <div class="diagram-box">
+                <img src="images/well_to_xmas_tree_1.png" alt="Wellhead to Christmas Tree">
+                <div class="diagram-caption">Fig 3: Wellhead to Christmas Tree Assembly</div>
+            </div>
+            <div class="diagram-box">
+                <img src="images/well_to_xmas_tree_2.png" alt="Christmas Tree Detail">
+                <div class="diagram-caption">Fig 4: Christmas Tree Components Detail</div>
+            </div>
+
+            <h4>🔧 Key Wellhead Components</h4>
+            <ul>
+                <li><strong>Casing Head</strong> – bottom-most spool; supports the casing strings; provides a pressure seal</li>
+                <li><strong>Tubing Head</strong> – supports the tubing string; contains the tubing hanger</li>
+                <li><strong>Tubing Hanger</strong> – suspends the production tubing within the wellbore</li>
+                <li><strong>Master Valve (Lower & Upper)</strong> – primary shut-off valves on the tubing bore; remain open during production</li>
+                <li><strong>Wing Valve (Flow Wing & Kill Wing)</strong> – controls flow of produced fluids to the flowline; <em>Flow Wing Valve is opened to direct oil to surface facility</em></li>
+                <li><strong>Choke</strong> – restricts and controls the flow rate of produced fluids</li>
+                <li><strong>Crown Valve</strong> – topmost valve; used during wireline/workover operations</li>
+            </ul>
+
+            <div class="key-point">🔑 <strong>Valves Opened for Flow:</strong> Upper Master Valve → Wing Valve (Flow Wing) → Choke → Flowline to GGS. The Kill Wing Valve remains CLOSED during normal production.</div>
+
+            <div class="bluff-box">
+                <h5>✨ Bluff Tip</h5>
+                <ul>
+                    <li>Mention <em>"Surface Safety Valve (SSV)"</em> – automatically shuts in the well in emergencies using a fail-close mechanism. This is a great add-on detail.</li>
+                    <li>State that the <em>choke</em> is critical because it protects surface equipment from high wellbore pressure while regulating production rate.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../../js/script.js"></script>
+</body>
+</html>
