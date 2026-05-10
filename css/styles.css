@@ -297,15 +297,16 @@ body.light-mode h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-body.light-mode .card-header h2, body.light-mode .unit-card h2 { color: #0f172a !important; }
-body.light-mode p.subtitle, body.light-mode .image-box h3, body.light-mode ol { color: #475569; }
+body.light-mode .card-header h2, body.light-mode .unit-card h2, body.light-mode h2, body.light-mode .section-title { color: #0f172a !important; }
+body.light-mode p.subtitle, body.light-mode .image-box h3, body.light-mode ol { color: #475569 !important; }
 body.light-mode .detailed-answer { background: rgba(0, 0, 0, 0.02); }
 body.light-mode .math-block, body.light-mode .equation-box { background: rgba(0, 0, 0, 0.05); color: #0f172a; }
 body.light-mode .math-block p, body.light-mode .math-block ul { color: #1e293b; }
 body.light-mode .urgent-alert p { color: #1e293b !important; }
 body.light-mode .urgent-alert p[style*="color: #cbd5e1"], body.light-mode .urgent-alert p[style*="color: #94a3b8"] { color: #475569 !important; }
 body.light-mode .urgent-alert span[style*="color: #fbbf24"] { color: #b45309 !important; }
-body.light-mode a[style*="color: #818cf8"] { color: #4f46e5 !important; }
+body.light-mode a[style*="color: #818cf8"], body.light-mode .back-link { color: #4f46e5 !important; }
+body.light-mode p[style*="color: #94a3b8"] { color: #475569 !important; }
 
 /* Theme Toggle Button */
 .theme-toggle {
