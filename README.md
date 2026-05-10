@@ -9,6 +9,7 @@ The interactive application is hosted on GitHub Pages.
 ## 📂 Repository Structure
 
 - `css/` - Global styling (dark mode, glassmorphism, responsive grids).
+- `js/` - Interactive frontend scripts (theme toggling, scroll animations).
 - `theory/` - Contains conceptual notes and materials for Units 1, 2, 3, and 4.
 - `numericals/` - Contains the solved numericals and methodologies.
   - `pre_midsem_ppt/` - Solutions to official Pre Midsem PPT problems (including error corrections).
@@ -20,7 +21,9 @@ The interactive application is hosted on GitHub Pages.
 ## ✨ Features
 - **MathJax Integration:** Beautiful and clear mathematical formulas.
 - **Graphical Analysis:** Side-by-side comparison of problem statements and marked-up graphical solutions (e.g., using Gilbert Curves).
-- **Responsive Design:** Premium dark UI with interactive micro-animations.
+- **Light/Dark Mode:** Seamless theme toggling with LocalStorage persistence.
+- **Responsive Design:** Fully optimized for mobile screens with stacking grids and adaptive layouts.
+- **Smooth Animations:** Staggered JavaScript fade-in animations for a premium user experience.
 
 ---
 *Maintained by Ayaan Goel*
