@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3 – Artificial Lift</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        .hero{background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(99,102,241,0.1));border-radius:24px;padding:3rem 2rem;text-align:center;margin-bottom:3rem;border:1px solid rgba(255,255,255,0.1)}
+        .flow{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin:1.5rem 0}
+        .fnode{background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.4);border-radius:10px;padding:.5rem 1rem;font-size:.85rem;color:#6ee7b7}
+        .farrow{color:#10b981;display:flex;align-items:center}
+        .qcard{background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:20px;padding:2rem;margin-bottom:2.5rem;backdrop-filter:blur(16px)}
+        .qhead{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,0.08);flex-wrap:wrap}
+        .qbadge{background:linear-gradient(135deg,#10b981,#6366f1);color:#fff;padding:.3rem .8rem;border-radius:20px;font-size:.8rem;font-weight:600;white-space:nowrap}
+        .mbadge{background:rgba(245,158,11,0.2);color:#fbbf24;border:1px solid rgba(245,158,11,0.3);padding:.3rem .8rem;border-radius:20px;font-size:.8rem;font-weight:600;margin-left:auto}
+        .qtitle{font-size:1.2rem;font-weight:600;color:#f8fafc}
+        .qquote{background:rgba(16,185,129,0.08);border-left:3px solid #10b981;padding:1rem 1.2rem;border-radius:0 10px 10px 0;margin-bottom:1.5rem;color:#cbd5e1;font-style:italic}
+        h4{color:#6ee7b7;margin:1.2rem 0 .6rem;font-size:1rem}
+        p,li{color:#cbd5e1;line-height:1.8}
+        ul,ol{margin-left:1.5rem}
+        li{margin-bottom:.3rem}
+        .imgbox{border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);margin:1rem 0}
+        .imgbox img{width:100%;display:block}
+        .imgcap{text-align:center;color:#64748b;font-size:.82rem;padding:.4rem;background:rgba(0,0,0,.2)}
+        .bluff{background:linear-gradient(135deg,rgba(16,185,129,.1),rgba(16,185,129,.05));border:1px solid rgba(16,185,129,.3);border-radius:14px;padding:1.2rem 1.5rem;margin-top:1.5rem}
+        .bluff h5{color:#34d399;margin-bottom:.5rem;font-size:.92rem}
+        .bluff p,.bluff li{color:#86efac;font-size:.88rem}
+        .kp{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);border-radius:10px;padding:.7rem 1rem;margin:.5rem 0;color:#fde68a;font-size:.9rem}
+        .twocol{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+        .back-btn{color:#818cf8;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;margin-bottom:1.5rem;font-weight:500}
+        .tag{display:inline-block;background:rgba(16,185,129,.15);color:#6ee7b7;border-radius:6px;padding:.15rem .5rem;font-size:.78rem;margin:.1rem}
+        @media(max-width:768px){.twocol{grid-template-columns:1fr}}
+        body.light-mode p,body.light-mode li{color:#374151}
+        body.light-mode .bluff p,body.light-mode .bluff li{color:#065f46}
+    </style>
+</head>
+<body>
+<div class="background-elements"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+<div class="container">
+<a href="../index.html" class="back-btn">← Back to Theory Dashboard</a>
+
+<div class="hero">
+    <div style="font-size:3.5rem;margin-bottom:.8rem">⛽</div>
+    <h1 style="font-size:2.5rem;margin-bottom:.6rem">Unit 3</h1>
+    <p class="subtitle">Introduction to Artificial Lift Techniques</p>
+    <div style="margin-top:1.5rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <span style="background:rgba(16,185,129,.2);border:1px solid rgba(16,185,129,.4);padding:.4rem 1rem;border-radius:20px;font-size:.85rem;color:#6ee7b7">📋 9 Exam Questions</span>
+        <span style="background:rgba(245,158,11,.2);border:1px solid rgba(245,158,11,.4);padding:.4rem 1rem;border-radius:20px;font-size:.85rem;color:#fbbf24">⏱️ 10 Hours</span>
+    </div>
+</div>
+
+<!-- Flowchart -->
+<div class="qcard">
+    <h2 style="color:#6ee7b7;margin-bottom:1rem">📌 Topic Flow</h2>
+    <div class="flow">
+        <div class="fnode">Why Artificial Lift?</div><div class="farrow">→</div>
+        <div class="fnode">SRP (Sucker Rod Pump)</div><div class="farrow">→</div>
+        <div class="fnode">Gas Lift</div><div class="farrow">→</div>
+        <div class="fnode">PCP</div><div class="farrow">→</div>
+        <div class="fnode">ESP</div><div class="farrow">→</div>
+        <div class="fnode">Jet Pump</div>
+    </div>
+    <div class="kp">💡 <strong>Why Artificial Lift?</strong> When reservoir energy is insufficient to lift fluids to surface naturally, artificial lift adds external energy via subsurface pumps, gas injection, or surface compression.</div>
+</div>
+
+<!-- Q1: SRP Surface Unit -->
+<div class="qcard">
+    <div class="qhead">
+        <span class="qbadge">Q1</span>
+        <span class="qtitle">Sucker Rod Pump – Surface Unit Components</span>
+        <span class="mbadge">10 Marks</span>
+    </div>
+    <div class="qquote">"Illustrate any five (5) components of the surface unit of a Sucker Rod Pump used in the oil and gas industry."</div>
+    <div class="answer-section">
+        <h4>🔑 Overview</h4>
+        <p>SRP (also called <em>Beam Pumping Unit</em> or <em>Nodding Donkey</em>) is the oldest and most widely used artificial lift. It converts rotary motion → reciprocating motion to lift oil.</p>
+        <p>Two types of surface units: <strong>Conventional</strong> (walking beam = Class-I lever) and <strong>Non-conventional</strong> (walking beam = Class-III lever).</p>
+        <div class="imgbox"><img src="images/srp_surface_unit.png" alt="SRP Surface Unit"><div class="imgcap">Fig 1: SRP Surface Unit Components</div></div>
+        <h4>⚙️ 10 Key Components (Pick any 5 + describe)</h4>
+        <ol>
+            <li><strong>Prime Mover</strong> – Electric motor or IC engine; provides the driving energy</li>
+            <li><strong>V-belt Drive</strong> – Transmits rotary motion from prime mover to gear reducer</li>
+            <li><strong>Double Reduction Gearbox</strong> – Reduces high-speed low-torque to low-speed high-torque output</li>
+            <li><strong>Crank Arm</strong> – Connected to crankshaft; has holes for pitman arm attachment to vary stroke length</li>
+            <li><strong>Pitman Arm</strong> – Connecting rod that converts crank's rotary motion → reciprocating up/down motion</li>
+            <li><strong>Counterweight</strong> – Attached to crank arms; reduces energy needed during upstroke</li>
+            <li><strong>Walking Beam</strong> – Central lever that transmits energy from prime mover to sucker rod string</li>
+            <li><strong>Sampson Post</strong> – Steel support legs that hold the walking beam, horsehead, and associated loads</li>
+            <li><strong>Horse Head (Mulehead)</strong> – Attached to walking beam end; keeps polished rod directly over wellhead</li>
+            <li><strong>Polished Rod</strong> – Topmost rod; passes through stuffing box and connects to sucker rod string</li>
+            <li><strong>Stuffing Box</strong> – Replaces crown valve in SRP wells; rubber packing prevents fluid leakage</li>
+            <li><strong>Equalizer</strong> – Connects pitman arm to walking beam via equalizer bearing</li>
+        </ol>
+        <div class="bluff"><h5>✨ Bluff Tip</h5><p>Mention: <em>"The counterweight is critical for energy balance — during upstroke it rotates downward reducing motor load, and stores energy during downstroke."</em> Then draw a neat labelled diagram.</p></div>
+    </div>
+</div>
+
+<!-- Q2: Pumping Cycle -->
+<div class="qcard">
+    <div class="qhead">
+        <span class="qbadge">Q2</span>
+        <span class="qtitle">SRP – Pumping Cycle (Subsurface Pump)</span>
+        <span class="mbadge">10 Marks</span>
+    </div>
+    <div class="qquote">"Appraise on the pumping cycle of a sub-surface pump of a sucker rod pump used in the oil and gas industry."</div>
+    <div class="answer-section">
+        <h4>🔩 Subsurface Pump Components</h4>
+        <ul>
+            <li><strong>Barrel (Working Barrel/Liner)</strong> – cylindrical housing suspended on tubing</li>
+            <li><strong>Plunger</strong> – moves up and down inside barrel; driven by sucker rod</li>
+            <li><strong>Standing Valve</strong> – stationary ball-and-seat valve at bottom of barrel; allows upward flow only</li>
+            <li><strong>Travelling Valve</strong> – in the plunger; allows upward flow only</li>
+            <li><strong>Pump Seat</strong> – holds the standing valve in position</li>
+        </ul>
+        <div class="imgbox"><img src="images/srp_subsurface_pump.png" alt="Subsurface Pump"><div class="imgcap">Fig 2: SRP Subsurface Pump & Pumping Cycle</div></div>
+        <h4>🔄 Downstroke</h4>
+        <ul>
+            <li>Plunger moves <strong>downward</strong></li>
+            <li>Travelling valve → <strong>OPENS</strong> (fluid enters plunger from below)</li>
+            <li>Standing valve → <strong>CLOSES</strong> (weight of fluid column overcomes BHP)</li>
+            <li>Fluid passes through travelling valve into the space above plunger</li>
+        </ul>
+        <h4>🔼 Upstroke</h4>
+        <ul>
+            <li>Plunger moves <strong>upward</strong></li>
+            <li>Travelling valve → <strong>CLOSES</strong> (fluid weight above prevents backflow)</li>
+            <li>Standing valve → <strong>OPENS</strong> (suction pressure < BHP, so well fluid enters barrel)</li>
+            <li>Fluid above plunger is lifted toward surface; new fluid enters barrel from formation</li>
+        </ul>
+        <div class="kp">🔑 Both valves are <strong>unidirectional</strong> — they only allow upward flow. This is the key principle of the pumping cycle.</div>
+        <div class="bluff"><h5>✨ Bluff Tip</h5><p>Draw a 2-panel diagram: left panel = downstroke (TV open, SV closed), right panel = upstroke (TV closed, SV open). Label fluid direction arrows. This alone can get you 7/10.</p></div>
+    </div>
+</div>
+
+<!-- Q3: Gas Lift -->
+<div class="qcard">
+    <div class="qhead">
+        <span class="qbadge">Q3</span>
+        <span class="qtitle">Gas Lift System & Types</span>
+        <span class="mbadge">15 Marks</span>
+    </div>
+    <div class="qquote">"Illustrate on the Gas Lift System and the types of Gas Lift used in the oil and gas industry with a neat diagram."</div>
+    <div class="answer-section">
+        <h4>🔑 Principle</h4>
+        <p>High-pressure gas is injected into the fluid column in the tubing to <strong>reduce the density</strong> of the fluid from the point of injection to the surface. This allows a lower reservoir pressure to lift fluids to surface.</p>
+        <div class="imgbox"><img src="images/gas_lift.png" alt="Gas Lift"><div class="imgcap">Fig 3: Gas Lift System</div></div>
+        <h4>Type 1: Continuous Gas Lift</h4>
+        <ul>
+            <li>Gas is injected <strong>continuously</strong> at a controlled rate to aerate the liquid column</li>
+            <li>Reservoir must have good BHP and Productivity Index</li>
+            <li>Only <strong>one operating valve</strong> (as deep as possible) does the injection; upper valves are unloading valves (closed once injection begins)</li>
+            <li>Gas injection through GLV port sizes: 3/16", 1/4", 5/16"</li>
+            <li>Best for: <strong>High volume, continuous production</strong></li>
+        </ul>
+        <h4>Type 2: Intermittent Gas Lift</h4>
+        <ul>
+            <li>Large volume of gas injected <strong>quickly</strong> under a liquid slug, then injection stops</li>
+            <li>Gas expands and displaces oil slug to surface; idle period allows liquid build-up</li>
+            <li>Applicable for wells with: <span class="tag">High PI, low BHP</span> <span class="tag">Low PI, low BHP</span> <span class="tag">Low PI, high BHP</span></li>
+        </ul>
+        <div class="bluff"><h5>✨ Bluff Tip</h5><p>Mention: <em>"The premature application of gas lift used the U-tube principle for shallow wells. With advent of Gas Lift Valves (GLVs), application extended to deeper wells."</em> This shows depth of knowledge.</p></div>
+    </div>
+</div>
+
+<!-- Q4: GLV Derivation -->
+<div class="qcard">
+    <div class="qhead">
+        <span class="qbadge">Q4</span>
+        <span class="qtitle">Gas Lift Valve – Injection Pressure Derivation</span>
+        <span class="mbadge">15 Marks</span>
+    </div>
+    <div class="qquote">"Derive the equation for Gas Lift injection pressure with a neat diagram labelling the components."</div>
+    <div class="answer-section">
+        <h4>🔩 GLV Components</h4>
+        <p>A GLV has 5 basic components: <strong>Body, Loading Element, Responsive Element, Transmission Element, Metering Element</strong>. The most common is the bellow-operated nitrogen-pressure loaded GLV.</p>
+        <div class="imgbox"><img src="images/gas_lift_valve_derivation.png" alt="GLV Derivation"><div class="imgcap">Fig 4: GLV Force Balance Diagram</div></div>
+        <h4>📐 Derivation</h4>
+        <p>Let: P<sub>inj</sub> = injection pressure, P<sub>dome</sub> = dome pressure, P<sub>prod</sub> = production pressure, A<sub>b</sub> = bellows area, A<sub>P</sub> = port area</p>
+        <p><strong>Force Balance for valve to open:</strong></p>
+        <p style="font-family:monospace; background:rgba(0,0,0,0.3); padding:0.8rem; border-radius:8px; margin:0.5rem 0">
+            P<sub>inj</sub>×(A<sub>b</sub>−A<sub>P</sub>) + P<sub>prod</sub>×A<sub>P</sub> ≥ A<sub>b</sub>×P<sub>dome</sub>
+        </p>
+        <p>Rearranging:</p>
+        <p style="font-family:monospace; background:rgba(0,0,0,0.3); padding:0.8rem; border-radius:8px; margin:0.5rem 0">
+            P<sub>inj</sub> ≥ (P<sub>dome</sub> − P<sub>prod</sub>×M) / (1 − M)
+        </p>
+        <p>Where <strong>M = A<sub>P</sub>/A<sub>b</sub></strong> (port-to-bellows area ratio)</p>
+        <div class="kp">🔑 The valve opens when injection pressure + production pressure ≥ dome pressure. The dome is pre-charged with nitrogen at a set pressure.</div>
+        <div class="bluff"><h5>✨ Bluff Tip</h5><p>State: <em>"In practice, M is small (A<sub>P</sub> ≪ A<sub>b</sub>), so the valve is primarily controlled by injection pressure. The dome pressure acts as the closing force via the bellows."</em></p></div>
+    </div>
+</div>
+
+<!-- Q5 & Q6: PCP -->
+<div class="qcard">
+    <div class="qhead">
+        <span class="qbadge">Q5 & Q6</span>
+        <span class="qtitle">Progressive Cavity Pump (PCP)</span>
+        <span class="mbadge">15 Marks each</span>
+    </div>
+    <div class="qquote">"Discuss the operating principles / Illustrate the PCP with a diagram labelling its parts and discuss advantages and limitations."</div>
+    <div class="answer-section">
+        <h4>🔑 Introduction</h4>
+        <p>PCP is the <em>youngest</em> artificial lift method (used since early 1980s). Used mainly for: <span class="tag">Heavy oil</span> <span class="tag">CBM dewatering</span> <span class="tag">Sand cuts up to 85%</span> <span class="tag">Mature water floods</span></p>
+        <div class="twocol">
+            <div class="imgbox"><img src="images/pcp.png" alt="PCP"><div class="imgcap">Fig 5: PCP Assembly</div></div>
+            <div class="imgbox"><img src="images/pcp_operating.png" alt="PCP Operating"><div class="imgcap">Fig 6: PCP Operating Principle – Rotor & Stator</div></div>
+        </div>
+        <h4>⚙️ Operating Principle</h4>
+        <ul>
+            <li>Consists of two helical shafts: metal <strong>Rotor</strong> (inner) inside rubber <strong>Stator</strong> (outer)</li>
+            <li>Rotor has <strong>one less lobe</strong> than the stator; every tooth of rotor is always in contact with stator inner surface</li>
+            <li>As rotor rotates inside stator, <strong>sealed cavities</strong> form and move axially from suction to discharge → creates pumping action</li>
+            <li>Two conditions for closed cavities: (1) rotor has one fewer tooth than stator, (2) they constitute longitudinally two helical gears</li>
+            <li>Result: uniform, non-pulsating flow; reversible and self-priming</li>
+        </ul>
+        <h4>✅ Advantages</h4>
+        <ul>
+            <li>Low capital and operating costs</li>
+            <li>Handles high viscous fluids, large solid concentrations</li>
+            <li>No valves to clog or gas lock</li>
+            <li>High tolerance for free gas (no pulsation)</li>
+            <li>Low wellhead profile</li>
+        </ul>
+        <h4>❌ Limitations</h4>
+        <ul>
+            <li>Max depth ~8,000 ft (2000 m)</li>
+            <li>Max temperature ~150°C (elastomer degrades beyond this)</li>
+            <li>Max rate ~250 m³/day</li>
+            <li>Low volumetric efficiency with large gas volumes</li>
+            <li>Requires constant fluid level above pump (no dry run)</li>
+            <li>Rod/coupling wear in deviated wells</li>
+        </ul>
+        <div class="bluff"><h5>✨ Bluff Tip</h5><p>Mention: <em>"PCP is extensively used in Canada, China, and Venezuela for heavy oil, and in ~1000 CBM wells in USA for dewatering. It is particularly popular in environmentally sensitive areas due to its low wellhead profile."</em></p></div>
+    </div>
+</div>
+
+<!-- Q7 & Q8: ESP -->
+<div class="qcard">
+    <div class="qhead">
+        <span class="qbadge">Q7 & Q8</span>
+        <span class="qtitle">Electric Submersible Pump (ESP)</span>
+        <span class="mbadge">15 + 10 Marks</span>
+    </div>
+    <div class="qquote">"Appraise on the ESP with a labelled diagram / Discuss advantages and disadvantages of ESP."</div>
+    <div class="answer-section">
+        <h4>🔑 Introduction</h4>
+        <p>ESP is a <strong>high-volume</strong> artificial lift for lifting large volumes of fluid from great depths. It is economical and effective under a variety of well conditions.</p>
+        <div class="imgbox"><img src="images/esp.png" alt="ESP"><div class="imgcap">Fig 7: ESP System Components</div></div>
+        <h4>⚙️ 5 Distinct Components</h4>
+        <ol>
+            <li><strong>Pump Section</strong> – Multi-stage centrifugal pump; OD and impeller design determines flow rate; number of stages determines head. BHP = (Q × Head × SG) / Pump Efficiency. Motor type: two-pole, three-phase squirrel cage induction (3500 rpm @ 60Hz)</li>
+            <li><strong>Separator Section (Intake)</strong> – Path for fluid to enter pump; often a gas separator (poor-boy type or rotary type centrifuge) to remove free gas before it enters pump</li>
+            <li><strong>Seal Section (Protector)</strong> – Protects motor by: (a) allowing expansion/contraction of dielectric oil, (b) equalizing annulus pressure with motor fluid, (c) isolating well fluid from motor oil, (d) absorbing pump thrust via sliding bearing</li>
+            <li><strong>Subsurface Motor</strong> – Two-pole, three-phase squirrel cage induction motor; filled with refined mineral oil for dielectric strength and thermal conductivity; attached at bottom of assembly</li>
+            <li><strong>Subsurface Cable</strong> – Three-phase power cable banded to production tubing; must withstand wellbore T, P, and resist well fluid impregnation; high voltage = low current = small conductor diameter (&lt;0.25 in)</li>
+        </ol>
+        <p><em>Motor Shroud</em> – used when fluid flow past motor is insufficient for cooling; diverts all fluid past motor.</p>
+        <div class="twocol">
+            <div>
+                <h4>✅ Advantages</h4>
+                <ul>
+                    <li>High volume and depth capability</li>
+                    <li>Highly efficient</li>
+                    <li>Low maintenance</li>
+                    <li>Minor surface equipment needed</li>
+                    <li>Good in deviated wells</li>
+                    <li>Adaptable to automation</li>
+                </ul>
+            </div>
+            <div>
+                <h4>❌ Disadvantages</h4>
+                <ul>
+                    <li>Limited adaptability to major reservoir changes</li>
+                    <li>Difficult to repair in field (entire string must be pulled)</li>
+                    <li>Scale deposits interfere with pump operation</li>
+                    <li>High electricity cost in remote areas</li>
+                    <li>Limited flexibility under some producing conditions</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bluff"><h5>✨ Bluff Tip</h5><p>Mention the BHP formula: <em>BHP = (Q × Head × SG) / Pump Efficiency</em>. This shows you know the design considerations. Also note: <em>"ESP is preferred for offshore wells and high water-cut wells where large volumes must be handled efficiently."</em></p></div>
+    </div>
+</div>
+
+<!-- Q9: Jet Pump -->
+<div class="qcard">
+    <div class="qhead">
+        <span class="qbadge">Q9</span>
+        <span class="qtitle">Hydraulic Lift – Jet Pump</span>
+        <span class="mbadge">15 Marks</span>
+    </div>
+    <div class="qquote">"Illustrate on the working of Jet Pump with a diagram labelling its parts and discuss the advantages and limitations."</div>
+    <div class="answer-section">
+        <h4>🔑 Principle</h4>
+        <p>Jet pumps transfer energy from a high-pressure (HP) power fluid to boost pressure of low-pressure (LP) well fluid via <strong>momentum transfer</strong> through an ejector nozzle, throat, and diffuser. No moving parts downhole.</p>
+        <div class="imgbox"><img src="images/jet_pump.png" alt="Jet Pump"><div class="imgcap">Fig 8: Jet Pump – Nozzle, Throat, Diffuser</div></div>
+        <h4>⚙️ Components & Working</h4>
+        <ol>
+            <li><strong>Nozzle</strong> – HP power fluid passes through; potential energy converts to kinetic energy (velocity ↑, pressure ↓)</li>
+            <li><strong>Suction Chamber (Production Inlet)</strong> – Low pressure at nozzle exit sucks in well fluid from annulus</li>
+            <li><strong>Mixing Tube (Throat)</strong> – Power fluid and well fluid mix; momentum transfer takes place</li>
+            <li><strong>Diffuser</strong> – Mixture decelerates (velocity ↓, pressure ↑); acquires discharge pressure sufficient to lift fluid to surface</li>
+        </ol>
+        <div class="kp">🔑 Venturi Effect: When fluid passes through the constricted throat, velocity increases → pressure drops → suction created to draw in well fluid.</div>
+        <div class="twocol">
+            <div>
+                <h4>✅ Advantages</h4>
+                <ul>
+                    <li>Positive displacement – strong drawdown</li>
+                    <li>Double-acting, high volumetric efficiency</li>
+                    <li>Good depth/volume capability (&gt;15,000 ft)</li>
+                    <li>Operates in deviated wells</li>
+                    <li>Multi-well production from single surface package</li>
+                    <li>No downhole moving parts</li>
+                </ul>
+            </div>
+            <div>
+                <h4>❌ Limitations</h4>
+                <ul>
+                    <li>Solids handling issues</li>
+                    <li>Requires specific BHA</li>
+                    <li>Medium volume potential only (50–1000 BPD)</li>
+                    <li>Requires service facilities</li>
+                    <li>Gas handling limitations</li>
+                    <li>Requires high-pressure surface line</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bluff"><h5>✨ Bluff Tip</h5><p>Key differentiator: <em>"Unlike all other artificial lift methods, the jet pump has NO moving parts downhole — the energy transfer is entirely through fluid momentum. This makes it extremely reliable and maintenance-free at depth."</em></p></div>
+    </div>
+</div>
+
+</div>
+<script src="../../js/script.js"></script>
+</body>
+</html>
