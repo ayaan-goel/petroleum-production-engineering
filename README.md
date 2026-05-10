@@ -1,21 +1,21 @@
-# Petroleum Production Engineering - Unit 2 Numericals
+# Petroleum Production Engineering Portfolio
 
-This repository contains a digital portfolio of numericals, assignments, and detailed graphical analysis for Unit 2 of Petroleum Production Engineering.
+This repository contains a digital portfolio of theory notes, numericals, assignments, and detailed graphical analysis for Petroleum Production Engineering.
 
 ## 🚀 Website Dashboard
-The interactive solutions are hosted on GitHub Pages.
+The interactive application is hosted on GitHub Pages.
 **[View the Dashboard Here](https://ayaan-goel.github.io/petroleum-production-engineering/)**
 
-## 📂 Section Structure
+## 📂 Repository Structure
 
-### Pre Midsem
-- **PPT Questions (2)** - Completed! Available in the `pre_midsem_ppt/` directory. (Includes correction of the PPT's AOF calculation error).
-- **Self-do PPT Questions (2)** - Completed! Available in the `pre_midsem_self/` directory.
-
-### Post Midsem
-*Note: All 6 post midsem questions were discussed in class.*
-- **PPT Questions (3)** - Completed! Available in the `post_midsem_ppt/` directory.
-- **Self Questions (3)** - Completed! Available in the `post_midsem_self/` directory.
+- `css/` - Global styling (dark mode, glassmorphism, responsive grids).
+- `theory/` - Contains conceptual notes and materials for Units 1, 2, 3, and 4.
+- `numericals/` - Contains the solved numericals and methodologies.
+  - `pre_midsem_ppt/` - Solutions to official Pre Midsem PPT problems (including error corrections).
+  - `pre_midsem_self/` - Solutions and derivations for self-practice Pre Midsem problems.
+  - `post_midsem_ppt/` - Solutions to official Post Midsem PPT problems.
+  - `post_midsem_self/` - Graphical analysis and solutions for Post Midsem self-practice problems.
+- `index.html` - The main entry point (dashboard portal) for the web application.
 
 ## ✨ Features
 - **MathJax Integration:** Beautiful and clear mathematical formulas.
